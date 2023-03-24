@@ -1,0 +1,27 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+.main-nav__list {
+  @include reset-list;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.main-nav__item {
+}
+
+
+.main-nav__link {
+  @include hover-nav;
+  padding: 10px;
+
+  color: inherit;
+}

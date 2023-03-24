@@ -1,0 +1,45 @@
+.gallery {
+  min-height: 100vh;
+  background-color: aquamarine;
+}
+
+
+.gallery__title {
+}
+
+
+.gallery__block {
+}
+
+
+.gallery__subtitle {
+  @include reset;
+}
+
+
+.gallery__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.gallery__item {
+
+}
+
+
+.gallery__img {
+}
+
+
+.gallery__item--test-1 {
+}
+
+
+.gallery__item--test-2 {
+}
+
+
+.gallery__item--test-3 {
+}

@@ -1,0 +1,42 @@
+.intro {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+  background-color: aquamarine;
+  // background-image: url("../img/");
+  // background-image: url("");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 10%;
+}
+
+
+.intro__quote {
+  max-width: 85vw;
+  margin: 0 auto;
+  padding: 15px;
+
+  background-color: $color--black-50;
+}
+
+
+.intro__title {
+  margin-bottom: 2vh;
+
+  color: $color--white;
+}
+
+
+.intro__cite {
+  @include reset;
+  display: block;
+  padding-right: 5vw;
+
+  // font-size: 1.4rem;
+  font-size: calc(var(--index) * 1.5);
+  text-align: right;
+  color: $color--white;
+
+}

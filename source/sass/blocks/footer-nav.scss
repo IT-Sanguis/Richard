@@ -1,0 +1,16 @@
+.footer-nav {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+
+.footer-nav__item {
+  flex-grow: 1;
+}
+
+
+.footer-nav__link {
+}

@@ -1,0 +1,49 @@
+$font-family: "Open Sans", "Arial", sans-serif;
+$font-family--title: "Open Sans", "Arial", sans-serif;
+// $font-family--title: "Georgia", serif;
+
+// $desktop-width: 1440px;
+$desktop-width--max: 1660px;
+$desktop-width: 1200px;
+$desktop-width--min: 960px;
+
+$tablet-width: 660px;
+$mobile-width--max: 430px;
+$mobile-width: 320px;
+
+$color--white: #ffffff;
+$color--white-10: rgba($color--white, 0.1);
+$color--white-30: rgba($color--white, 0.3);
+$color--white-50: rgba($color--white, 0.5);
+$color--white-80: rgba($color--white, 0.8);
+$color--black: #000000;
+$color--black-10: rgba($color--black, 0.1);
+$color--black-50: rgba($color--black, 0.5);
+$color--accent: #27134e;
+$color--accent-80: rgba($color--accent, 0.8);
+$color--primary: #131C4e;
+$color--primary-50: rgba($color--primary, 0.5);
+$color--primary-80: rgba($color--primary, 0.8);
+
+
+$color-bg--white: $color--white;
+$color-bg--black: $color--black;
+$color-bg--accent: $color--accent;
+
+$color-bg--primary: #eff1f3;
+// $color-bg--primary: #3b4578;
+$color-bg--primary-0: rgba($color-bg--primary, 0);
+
+
+$color-dot: $color--white;
+$color-dot--checked: $color--white-50;
+$color-dot--hover: $color--white-30;
+
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+
+:root {
+  --index: calc(1vw + 1vh);
+}

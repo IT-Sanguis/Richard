@@ -1,0 +1,56 @@
+.btn {
+  @include reset;
+  display: inline-block;
+  vertical-align: middle;
+
+  cursor: pointer;
+
+
+
+  &--order {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    display: block;
+    padding: 10px;
+    aspect-ratio: 1;
+
+    background-color: tomato;
+    // background-color: transparent;
+
+    border: none;
+    border-radius: 50%;
+
+
+    svg {
+      transform: translate(-10%, 15%);
+
+      fill: $color--white;
+    }
+  }
+
+
+  &--submit {
+  }
+
+
+  &--up {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    display: block;
+    padding: 5px;
+
+    line-height: 1;
+    color: tomato;
+    // color: white;
+
+    background-color: $color--white-50;
+    // background-color: tomato;
+  }
+}
+
+
+

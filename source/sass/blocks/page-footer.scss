@@ -1,0 +1,39 @@
+.page-footer {
+  display: flex;
+  // flex-wrap: wrap;
+  // background-color: aqua;
+}
+
+.page-footer__logo {
+  display: flex;
+  align-items: center;
+
+  // margin-right: 0;
+}
+
+.page-footer__wrapper {
+  flex: 1 1 auto;
+}
+
+.page-footer__nav {
+}
+
+
+.page-footer__social {
+}
+
+
+.page-footer__info{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.page-footer__copyright {
+  @include reset;
+}
+
+
+.page-footer__policy {
+}

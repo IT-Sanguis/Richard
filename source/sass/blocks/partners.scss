@@ -1,0 +1,24 @@
+.partners {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  background-color: aquamarine;
+}
+
+.partners__wrapper {
+  width: 80vw;
+
+  padding: 15px;
+
+  // background-color: $color-bg--white;
+  background-color: $color--white-50;
+}
+
+.partners__title {
+}
+.partners__slogan {
+}
+.partners__desc {
+}

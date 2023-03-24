@@ -1,0 +1,97 @@
+.services {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.services__wrapper {
+  max-width: 70vw;
+
+  background-color: $color-bg--white;
+}
+
+
+.services__title {
+  max-width: 60vw;
+  margin: 0 auto;
+  // text-align: center;
+}
+
+.services__subtitle {
+  @include reset;
+  // width: 60vw;
+  // text-align: center;
+}
+
+
+
+.services__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  // grid-template-rows: 1fr 1fr;
+}
+
+
+.services__item {
+  position: relative;
+  padding-top: 60px;
+
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 50px;
+    height: 50px;
+
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+
+    transform: translate(-50%);
+  }
+
+  &--design::after {
+      background-image: url("../img/services-icon-design.svg");
+  }
+
+
+  &--manufacture::after {
+      background-image: url("../img/services-icon-manufacture.svg");
+  }
+
+
+  &--complete::after {
+      background-image: url("../img/services-icon-complete.svg");
+  }
+
+
+  &--deliver::after {
+      background-image: url("../img/services-icon-delivery.svg");
+  }
+
+
+  &--assembly::after {
+      background-image: url("../img/services-icon-assembly.svg");
+
+  }
+
+
+  &--guaranty::after {
+      background-image: url("../img/services-icon-guaranty.svg");
+  }
+}
+
+
+
+
+
+.services__desc {
+  @include reset;
+}
+
