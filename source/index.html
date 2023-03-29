@@ -21,7 +21,13 @@
     Yandex
   -->
 
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet"> -->
+
+  <link rel="stylesheet" type="text/css" href="libs/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <!-- <script src="libs/modernizr-custom.js"></script> -->
 
   <meta property="og:title" content="Richard | Мебель">
   <meta property="og:description"
@@ -31,9 +37,20 @@
   <meta property="og:image:alt" content="Кухни и мебель «Richard»">
   <meta property="og:url" content="https://richard-mebel.ru/">
   <meta property="og:locate" content="ru_RU">
-
+  <!-- ! ТОЛЬКО ДЛЯ РАЗРАБОТКИ -->
+  <!-- <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate"> -->
+  <!-- ! ТОЛЬКО ДЛЯ РАЗРАБОТКИ -->
   <title>Richard | Кухни и мебель</title>
 
+
+  <!-- ! ПОДОБРАТЬ -->
+  <style>
+    ::selection {
+      color: #ffffff;
+      background-color: #bd987b;
+    }
+  </style>
+  <!-- ! ПОДОБРАТЬ -->
 </head>
 
 <body>
@@ -42,7 +59,7 @@
   </div>
 
   <!-- <header class="page-header js-nav" id="begin"> -->
-  <header class="page-header">
+  <header class="page-header" id="begin">
     <div class="container page-header__wrapper">
       <a class="page-header__logo logo" href="#">
         <svg class="logo__img" role="img" width="100" height="70" aria-labelledby="logotype">
@@ -50,7 +67,7 @@
           <use xlink:href="#logo"></use>
         </svg>
       </a>
-      <!-- <button class="page-header__burger" type="button" aria-label="Показать/скрыть меню"></button> -->
+      <button class="page-header__burger" type="button" aria-label="Показать/скрыть меню"></button>
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -82,90 +99,287 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="container about__wrapper">
-        <h2 class="about__title title" id="about">О нас</h2>
-        <p class="about__desc">Мебельная фабрика &laquo;Richard&raquo; является прямым производителем кухонных гарнитуров и&nbsp;корпусной мебели.</p>
+        <h2 class="about__title title">О нас</h2>
+        <p class="about__desc">Мебельная фабрика &laquo;Richard&raquo; является прямым производителем кухонных
+          гарнитуров и&nbsp;корпусной мебели.</p>
         <p class="about__desc">Фабрика работает с&nbsp;2008&nbsp;года, и&nbsp;уже зарекомендовала себя на&nbsp;рынке как
           надёжного производителя. Мы&nbsp;работаем как с&nbsp;оптовыми, так и&nbsp;с&nbsp;розничными клиентами.</p>
-        <p class="about__desc">Главная задача нашей фабрики&nbsp;&mdash; это человеческое отношение ко&nbsp;всем клиентам.
-          И&nbsp;мы&nbsp;всегда будем рады проконсультировать вас и&nbsp;помочь с&nbsp;выбором кухни и&nbsp;техники, даже
+        <p class="about__desc">Главная задача нашей фабрики&nbsp;&mdash; человеческое отношение ко&nbsp;всем клиентам.
+          Мы&nbsp;всегда будем рады проконсультировать вас и&nbsp;помочь с&nbsp;выбором кухни и&nbsp;техники, даже
           если заказ будет осуществлён не&nbsp;у&nbsp;нас.</p>
-        <p class="about__desc">У&nbsp;нас работают одни из&nbsp;лучших дизайнеры-замерщики, которые проходят двухмесячное
+        <p class="about__desc">У&nbsp;нас работают одни из&nbsp;лучших дизайнеров-замерщиков, которые прошли
+          двухмесячное
           обучение. Наши замеры и&nbsp;консультации бесплатны. Мы&nbsp;всегда поможем вам с&nbsp;выбором модулей, цвета
           и&nbsp;даже кухонной техники.</p>
+        <p class="about__desc">Мы&nbsp;работаем по&nbsp;Москве и&nbsp;Московской области.</p>
       </div>
     </section>
 
-    <section class="gallery">
-      <div class="container">
-        <h2 class="gallery__title title" id="gallery">Наши работы</h2>
+    <section class="gallery" id="gallery">
+      <div class="container gallery__wrapper">
+        <h2 class="gallery__title title">Наши работы</h2>
         <section class="gallery__block">
-          <h3 class="gallery__subtitle">Кухни</h3>
-          <ul class="gallery__list">
+          <h3 class="gallery__subtitle">Кухни:</h3>
+
+
+          <!-- Slider main container -->
+          <div class="gallery__slider gallery__slider--kitchen swiper">
+            <!-- Additional required wrapper -->
+            <div class="gallery__slider-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/1.jpg" alt="Кухня 1">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/2.jpg" alt="Кухня 2">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/3.jpg" alt="Кухня 3">
+                <!-- <div class="swiper-zoom-container">
+                  <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/3.jpg" alt="Кухня 3">
+                </div> -->
+              </div>
+              <div class="swiper-slide">
+              <!-- <div class="swiper-slide" data-hash="slide1"> -->
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/4.jpg" alt="Кухня 4">
+                <!-- ! <img class="gallery__img" loading="lazy" width="300" height="250" src="img/content/Kitchens/4.jpg" alt="Кухня 4"> -->
+                <!-- ! <div class="swiper-lazy-preloader"></div> -->
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/5.jpg" alt="Кухня 5">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/6.jpg" alt="Кухня 6">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/7.jpg" alt="Кухня 7">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/8.jpg" alt="Кухня 8">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/9.jpg" alt="Кухня 9">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/10.jpg" alt="Кухня 10">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/11.jpg" alt="Кухня 11">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/12.jpg" alt="Кухня 12">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/13.jpg" alt="Кухня 13">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/14.jpg" alt="Кухня 14">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/15.jpg" alt="Кухня 15">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/16.jpg" alt="Кухня 16">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/17.jpg" alt="Кухня 17">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/18.jpg" alt="Кухня 18">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+
+          <!-- <ul class="gallery__list">
             <li class="gallery__item gallery__item--test-1">
-              <!-- <img class="gallery__img" width="218" height="170" src="img/photo-kitchen_1_1-mobile@1x-min.jpg" alt="Кухня 1"> -->
-              <img class="gallery__img" width="300" height="250"
-                src="https://via.placeholder.com/300x250/3b4578/ffffff.jpg?text=Фото+кухни+1" alt="Кухня 1">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/1.jpg" alt="Кухня 1">
             </li>
             <li class="gallery__item gallery__item--test-2">
-              <!-- <img class="gallery__img" width="218" height="170" src="img/photo-kitchen_1_1-mobile@1x-min.jpg" alt="Кухня 2"> -->
-              <img class="gallery__img" width="300" height="250"
-                src="https://via.placeholder.com/300x250/3b4578/ffffff.jpg?text=Фото+кухни+2" alt="Кухня 2">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/2.jpg" alt="Кухня 2">
             </li>
             <li class="gallery__item gallery__item--test-3">
-              <!-- <img class="gallery__img" width="218" height="170" src="img/photo-kitchen_1_1-mobile@1x-min.jpg" alt="Кухня 3"> -->
-              <img class="gallery__img" width="300" height="250"
-                src="https://via.placeholder.com/300x250/3b4578/ffffff.jpg?text=Фото+кухни+3" alt="Кухня 3">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/3.jpg" alt="Кухня 3">
             </li>
-          </ul>
+            <li class="gallery__item gallery__item--test-4">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/4.jpg" alt="Кухня 4">
+            </li>
+            <li class="gallery__item gallery__item--test-5">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/4.jpg" alt="Кухня 5">
+            </li>
+            <li class="gallery__item gallery__item--test-6">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/6.jpg" alt="Кухня 6">
+            </li>
+            <li class="gallery__item gallery__item--test-7">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/7.jpg" alt="Кухня 7">
+            </li>
+            <li class="gallery__item gallery__item--test-8">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/8.jpg" alt="Кухня 8">
+            </li>
+            <li class="gallery__item gallery__item--test-9">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/9.jpg" alt="Кухня 9">
+            </li>
+            <li class="gallery__item gallery__item--test-10">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/10.jpg" alt="Кухня 10">
+            </li>
+            <li class="gallery__item gallery__item--test-11">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/11.jpg" alt="Кухня 11">
+            </li>
+            <li class="gallery__item gallery__item--test-12">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/12.jpg" alt="Кухня 12">
+            </li>
+            <li class="gallery__item gallery__item--test-13">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/13.jpg" alt="Кухня 13">
+            </li>
+            <li class="gallery__item gallery__item--test-14">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/14.jpg" alt="Кухня 14">
+            </li>
+            <li class="gallery__item gallery__item--test-15">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/15.jpg" alt="Кухня 15">
+            </li>
+            <li class="gallery__item gallery__item--test-16">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/16.jpg" alt="Кухня 16">
+            </li>
+            <li class="gallery__item gallery__item--test-17">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/17.jpg" alt="Кухня 17">
+            </li>
+            <li class="gallery__item gallery__item--test-18">
+              <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/18.jpg" alt="Кухня 18">
+            </li>
+          </ul> -->
+        </section>
+
+        <section class="gallery__block">
+          <h3 class="gallery__subtitle">Шкафы и комоды:</h3>
+
+          <!-- Slider main container -->
+          <div class="gallery__slider gallery__slider--cabinets swiper">
+            <!-- Additional required wrapper -->
+            <div class="gallery__slider-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/1.jpg" alt="Шкаф 1">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/2.jpg" alt="Шкаф 2">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/3.jpg" alt="Шкаф 3">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/4.jpg" alt="Шкаф 4">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/5.jpg" alt="Шкаф 5">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/6.jpg" alt="Шкаф 6">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/7.jpg" alt="Шкаф 7">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Dressers/1.jpg" alt="Комод 1">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Dressers/2.jpg" alt="Комод 2">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+
+
+          <!-- <ul class="gallery__list">
+            <li class="gallery__item gallery__item--test-1">
+              <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/1.jpg" alt="Шкаф 1">
+            </li>
+            <li class="gallery__item gallery__item--test-2">
+              <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/2.jpg" alt="Шкаф 2">
+            </li>
+            <li class="gallery__item gallery__item--test-3">
+              <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/3.jpg" alt="Шкаф 3">
+            </li>
+            <li class="gallery__item gallery__item--test-4">
+              <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/4.jpg" alt="Шкаф 4">
+            </li>
+            <li class="gallery__item gallery__item--test-5">
+              <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/5.jpg" alt="Шкаф 5">
+            </li>
+            <li class="gallery__item gallery__item--test-6">
+              <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/6.jpg" alt="Шкаф 6">
+            </li>
+            <li class="gallery__item gallery__item--test-7">
+              <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/7.jpg" alt="Шкаф 7">
+            </li>
+            <li class="gallery__item gallery__item--test-8">
+              <img class="gallery__img" width="300" height="250" src="img/content/Dressers/1.jpg" alt="Комод 1">
+            </li>
+            <li class="gallery__item gallery__item--test-9">
+              <img class="gallery__img" width="300" height="250" src="img/content/Dressers/2.jpg" alt="Комод 2">
+            </li>
+          </ul> -->
         </section>
         <section class="gallery__block">
-          <h3 class="gallery__subtitle">Шкафы</h3>
-          <ul class="gallery__list">
+          <h3 class="gallery__subtitle">Прихожие:</h3>
+
+          <!-- Slider main container -->
+          <div class="gallery__slider gallery__slider--hallways swiper">
+            <!-- Additional required wrapper -->
+            <div class="gallery__slider-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Hallways/1.jpg" alt="Прихожая 1">
+              </div>
+              <div class="swiper-slide">
+                <img class="gallery__img" width="300" height="250" src="img/content/Hallways/2.jpg" alt="Прихожая 2">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+
+          <!-- <ul class="gallery__list">
             <li class="gallery__item gallery__item--test-1">
-              <!-- <img class="gallery__img" width="218" height="170" src="img/photo-kitchen_1_1-mobile@1x-min.jpg" alt="Кухня 1"> -->
-              <img class="gallery__img" width="300" height="250"
-                src="https://via.placeholder.com/300x250/3b4578/ffffff.jpg?text=Фото+шкаф+1" alt="Шкаф 1">
+              <img class="gallery__img" width="300" height="250" src="img/content/Hallways/1.jpg" alt="Прихожая 1">
             </li>
             <li class="gallery__item gallery__item--test-2">
-              <!-- <img class="gallery__img" width="218" height="170" src="img/photo-kitchen_1_1-mobile@1x-min.jpg" alt="Кухня 2"> -->
-              <img class="gallery__img" width="300" height="250"
-                src="https://via.placeholder.com/300x250/3b4578/ffffff.jpg?text=Фото+шкаф+2" alt="Шкаф 2">
+              <img class="gallery__img" width="300" height="250" src="img/content/Hallways/2.jpg" alt="Прихожая 2">
             </li>
-            <li class="gallery__item gallery__item--test-3">
-              <!-- <img class="gallery__img" width="218" height="170" src="img/photo-kitchen_1_1-mobile@1x-min.jpg" alt="Кухня 3"> -->
-              <img class="gallery__img" width="300" height="250"
-                src="https://via.placeholder.com/300x250/3b4578/ffffff.jpg?text=Фото+шкаф+3" alt="Шкаф 3">
-            </li>
-          </ul>
-        </section>
-        <section class="gallery__block">
-          <h3 class="gallery__subtitle">Прихожие</h3>
-          <ul class="gallery__list">
-            <li class="gallery__item gallery__item--test-1">
-              <!-- <img class="gallery__img" width="218" height="170" src="img/photo-kitchen_1_1-mobile@1x-min.jpg" alt="Кухня 1"> -->
-              <img class="gallery__img" width="300" height="250"
-                src="https://via.placeholder.com/300x250/3b4578/ffffff.jpg?text=Фото+прихожая+1" alt="Прихожая 1">
-            </li>
-            <li class="gallery__item gallery__item--test-2">
-              <!-- <img class="gallery__img" width="218" height="170" src="img/photo-kitchen_1_1-mobile@1x-min.jpg" alt="Кухня 2"> -->
-              <img class="gallery__img" width="300" height="250"
-                src="https://via.placeholder.com/300x250/3b4578/ffffff.jpg?text=Фото+прихожая+2" alt="Прихожая 2">
-            </li>
-            <li class="gallery__item gallery__item--test-3">
-              <!-- <img class="gallery__img" width="218" height="170" src="img/photo-kitchen_1_1-mobile@1x-min.jpg" alt="Кухня 3"> -->
-              <img class="gallery__img" width="300" height="250"
-                src="https://via.placeholder.com/300x250/3b4578/ffffff.jpg?text=Фото+прихожая+3" alt="Прихожая 3">
-            </li>
-          </ul>
+          </ul> -->
         </section>
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <div class="container services__wrapper">
-        <h2 class="services__title title" id="services">От проектирования <br> до гарантированной установки</h2>
+        <h2 class="visually-hidden">Мы предоставляем</h2>
+        <p class="services__title title">От и До</p>
+        <!-- <h2 class="services__title title">От проектирования <br> до гарантированной установки</h2> -->
         <ul class="services__list">
           <li class="services__item services__item--design">
             <h3 class="services__subtitle">Проектируем</h3>
@@ -179,133 +393,166 @@
           </li>
           <li class="services__item services__item--complete">
             <h3 class="services__subtitle">Комплектуем</h3>
-            <p class="services__desc">Мы&nbsp;предлагаем широкий выбор комплектующих и&nbsp;аксессуаров, чтобы наша мебель
+            <p class="services__desc">Мы&nbsp;предлагаем широкий выбор комплектующих и&nbsp;аксессуаров, чтобы наша
+              мебель
               соответствовала всем вашим требованиям и&nbsp;предпочтениям</p>
           </li>
           <li class="services__item services__item--deliver">
             <h3 class="services__subtitle">Доставляем</h3>
-            <p class="services__desc">Мы&nbsp;осуществим быструю и&nbsp;надежную доставку продукции точно по&nbsp;адресу
+            <p class="services__desc">Мы&nbsp;осуществим быструю и&nbsp;надёжную доставку продукции точно по&nbsp;адресу
             </p>
           </li>
           <li class="services__item services__item--assembly">
             <h3 class="services__subtitle">Собираем</h3>
-            <p class="services__desc">Наша команда профессионалов быстро и&nbsp;качественно соберет мебель на&nbsp;месте,
+            <p class="services__desc">Наша команда профессионалов быстро и&nbsp;качественно соберёт мебель
+              на&nbsp;месте,
               чтобы&nbsp;Вы могли наслаждаться ею&nbsp;сразу после доставки</p>
           </li>
           <li class="services__item services__item--guaranty">
             <h3 class="services__subtitle">Гарантируем</h3>
-            <p class="services__desc">Мы&nbsp;предоставляем гарантию на&nbsp;всю продукцию, произведенные нашей фабрикой,
-              чтобы&nbsp;Вы могли чувствовать себя уверенно и&nbsp;спокойно при ее&nbsp;использовании</p>
+            <p class="services__desc">Мы&nbsp;предоставляем гарантию на&nbsp;всю продукцию, произведённую нашей
+              фабрикой,
+              чтобы&nbsp;Вы могли чувствовать себя уверенно и&nbsp;спокойно при её&nbsp;использовании</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="partners">
+    <section class="partners" id="partners">
       <div class="container partners__wrapper">
-        <h2 class="partners__title title" id="partners">Нашим партнерам</h2>
-        <p class="partners__slogan">Мебельная фабрика &laquo;Richard&raquo;&nbsp;&mdash; ваш надежный партнер в&nbsp;сфере
+        <h2 class="partners__title title">Нашим партнёрам</h2>
+        <p class="partners__desc">Мебельная фабрика &laquo;Richard&raquo;&nbsp;&mdash; ваш надёжный партнер в&nbsp;сфере
           дистрибуции и&nbsp;производства качественной мебели.</p>
         <p class="partners__desc">Мы&nbsp;готовы сотрудничать с&nbsp;физическими и&nbsp;юридическими лицами, которые
-          заинтересованы в&nbsp;распространении нашей продукции и&nbsp;росте бизнеса. Мы&nbsp;гарантируем нашим партнерам
+          заинтересованы в&nbsp;распространении нашей продукции и&nbsp;росте бизнеса. Мы&nbsp;гарантируем нашим
+          партнерам
           выгодные условия и&nbsp;поддержку на&nbsp;каждом этапе сотрудничества. Работать с&nbsp;нами просто
           и&nbsp;удобно.</p>
       </div>
     </section>
 
-    <a class="btn btn--up" aria-label="Вверх" href="#">Вверх</a>
+    <a class="btn btn--up" aria-label="Наверх" href="#begin">
+      <svg role="img" width="40" height="40">
+        <use xlink:href="#icon-arrow"></use>
+      </svg>
+    </a>
     <button class="btn btn--order" type="button" aria-label="Заказать замеры">
       <svg role="img" width="35" height="35">
-        <use xlink:href="#icon-phone"></use>
+        <use xlink:href="#icon-order"></use>
       </svg>
     </button>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo logo" href="#">
-      <svg class="logo__img" role="img" width="130" height="100" aria-labelledby="logotype-footer">
-        <title id="logotype-footer">Логотип «Richard»</title>
-        <use xlink:href="#logo"></use>
-      </svg>
-    </a>
-
-    <div class="page-footer__wrapper">
-      <ul class="page-footer__nav footer-nav">
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#about">О нас</a>
-        </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#services">Наши услуги</a>
-        </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#gallery">Наши работы</a>
-        </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#advantages">Наши преимущества</a>
-        </li>
-      </ul>
-      <div class="page-footer__social social">
-        <p class="social__text">Мы в соцсецях:</p>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/richard_mebel/"
-              title="Instagram">
-              <svg role="img" width="20" height="20">
-                <use xlink:href="#icon-instagram"></use>
-              </svg>
-            </a>
+    <div class="container page-footer__wrapper">
+      <a class="page-footer__logo logo" href="#">
+        <svg class="logo__img" role="img" width="100" height="70" aria-labelledby="logotype-footer">
+          <title id="logotype-footer">Логотип «Richard»</title>
+          <use xlink:href="#logo"></use>
+        </svg>
+      </a>
+      <div class="page-footer__content">
+        <ul class="page-footer__nav footer-nav">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#about">О нас</a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="https://www.vk.com/" title="VK">
-              <svg role="img" width="20" height="20">
-                <use xlink:href="#icon-vk"></use>
-              </svg>
-            </a>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#services">Наши услуги</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#gallery">Наши работы</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#advantages">Наши преимущества</a>
           </li>
         </ul>
-      </div>
-      <div class="page-footer__info">
-        <!-- <p class="page-footer__copyright">Copyright 2023</p> -->
-        <a href="docs/policy.pdf" class="page-footer__policy" target="_blank">Политика конфиденциальности</a>
+        <div class="page-footer__info">
+          <!-- <p class="page-footer__copyright">Copyright 2023</p> -->
+          <p class="page-footer__address">Москва и Московская область</p>
+          <div class="page-footer__social social">
+            <span class="visually-hidden">Мы в соцсетях:</span>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://www.instagram.com/richard_mebel/"
+                  title="Instagram">
+                  <svg role="img" width="20" height="20">
+                    <use xlink:href="#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://www.vk.com/" title="VK">
+                  <svg role="img" width="25" height="25">
+                    <use xlink:href="#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="page-footer__policy" href="docs/policy.pdf" target="_blank">Политика конфиденциальности</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <section class="modal">
+  <section class="modal__window feedback">
     <h2 class="visually-hidden"></h2>
-    <button class="btn modal__btn-close" type="button" title="Закрыть">X</button>
-    <!-- <form class="form" method="post" action="send.php" target="_blank"> -->
-    <!-- <form method="post" action="https://echo.htmlacademy.ru"> -->
-    <form class="modal__form form" method="post" action="https://echo.htmlacademy.ru" target="_blank">
+    <button class="btn modal__btn-close" type="button" title="Закрыть"></button>
+    <form class="feedback__form form" method="post" action="send.php" target="_self">
+      <!-- <form method="post" action="https://echo.htmlacademy.ru"> -->
+      <!-- <form class="modal__form form" method="post" action="https://echo.htmlacademy.ru" target="_blank"> -->
 
       <label class="visually-hidden" for="name">Ваше имя:</label>
       <input class="form__input" id="name" type="text" name="name" placeholder="Ваше имя *" required>
 
       <label class="visually-hidden" for="phone">Ваш телефон:</label>
-      <input class="form__input" id="phone" type="tel" name="phone" placeholder="Ваш телефон *" required>
+      <input class="form__input" id="phone" type="tel" name="phone" maxlength="17" placeholder="Ваш телефон *" required>
+      <!-- <input class="form__input" id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" maxlength="12" placeholder="Ваш телефон *" required> -->
 
       <label class="visually-hidden" for="email">Ваша почта:</label>
       <input class="form__input" id="email" type="email" name="email" placeholder="Ваша почта">
 
       <label class="visually-hidden" for="text">Дополнительная информация:</label>
       <textarea class="form__input form__input--text" name="text" id="text" cols="30" rows="10"
-        placeholder="Дополнительная информация"></textarea>
+        placeholder="Дополнительная информация" maxlength="300"></textarea>
 
       <input type="hidden" name="act" value="order">
 
-
-
       <button class="btn btn--submit" type="submit">Отправить</button>
-      <p class="modal__policy-desc">
-        Нажимая на&nbsp;кнопку &laquo;Отправить&raquo;, Вы&nbsp;даете согласие на&nbsp;обработку персональных данных и
+      <p class="feedback__policy-desc">
+        Нажимая на&nbsp;кнопку &laquo;Отправить&raquo;, Вы&nbsp;даёте согласие на&nbsp;обработку персональных данных и
         соглашаетесь с
-        <a class="modal__policy-link" href="docs/policy.pdf" target="_blank">политикой конфиденциальности</a>
+        <a class="feedback__policy-link" href="docs/policy.pdf" target="_blank">политикой конфиденциальности.</a>
       </p>
 
     </form>
   </section>
 
+  <section class="modal__window modal__window--success ">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Ваша заявка отправлена</h2>
+      <p class="modal__desc">Спасибо за вашу заявку!</p>
+      <p class="modal__desc">В ближайшее время мы свяжемся с вами.</p>
+    </div>
+    <div class="modal__btn-wrapper">
+      <button class="modal__btn btn" type="button">Закрыть окно</button>
+    </div>
+  </section>
+
+  <section class="modal__window modal__window--failure">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__desc">Давайте попробуем еще раз.</p>
+    </div>
+    <div class="modal__btn-wrapper">
+      <button class="modal__btn btn" type="button">OK</button>
+    </div>
+  </section>
+
+  <script src="libs/swiper-bundle.min.js"></script>
   <script src="js/index.min.js"></script>
+  <script src="js/slider.min.js"></script>
+  <script src="js/modal.min.js"></script>
 </body>
 
 </html>

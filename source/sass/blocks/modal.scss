@@ -1,31 +1,100 @@
-.modal {
-  position: relative;
+.modal__window {
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  z-index: 1;
 
-  width: 50vw;
+  display: none;
+
   margin: 0 auto;
-  padding: 30px;
 
-  background-color: aqua;
+  transform: translate(-50%, -50%);
+
+
+  &--success {
+    z-index: 2;
+
+    background-color: $color-bg--primary;
+  }
+
+  &--failure {
+    z-index: 2;
+
+    background-color: $color-bg--primary;
+  }
+
+  &--show {
+    display: block;
+  }
+}
+
+.modal__wrapper {
+  margin: 0 auto;
+  padding: 40px 20px 30px;
+
+  text-align: center;
+}
+
+.modal__title {
+  @include reset;
+  margin-bottom: 25px;
+
+  font-size: 1.2rem;
+  line-height: 1.33;
+  color: $color--black;
+}
+
+
+.modal__desc {
+  @include reset;
+}
+
+
+.modal__btn-wrapper {
+  // display: flex;
+  margin: 0 auto;
+  padding: 50px 20px;
+
+  text-align: center;
+
+  background-color: #315D6E;
+}
+
+
+.modal__btn {
+  padding: 20px;
 }
 
 
 .modal__btn-close {
   position: absolute;
-  top: 0;
-  right: 0;
-}
+  top: 10px;
+  right: 10px;
 
+  padding: 18px;
 
-.modal__form {
-  display: flex;
-  flex-direction: column;
-}
+  background-color: transparent;
 
+  border: none;
 
-.modal__policy-desc {
+  cursor: pointer;
 
-}
+  &::after, &::before {
+    content: "";
+    position: absolute;
+    // top: 15px;
+    // right: 0;
+    width: 36px;
+    height: 3px;
+    background-color: $color-bg--white;
+    // border-radius: 3px;
+  }
 
+  &::before {
+    transform: translate(-50%, 50%) rotate(-45deg);
+  }
 
-.modal__policy-link {
+  &::after {
+    transform: translate(-50%, 50%) rotate(45deg);
+  }
 }

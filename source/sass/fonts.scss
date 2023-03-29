@@ -16,3 +16,11 @@
        url("../fonts/opensansbold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Caveat-Bold-subset.woff2") format("woff2"),
+       url("../fonts/Caveat-Bold-subset.woff") format("woff");
+}

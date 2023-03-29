@@ -3,19 +3,30 @@
 
   display: flex;
   align-items: center;
+
+  background-color: $color-bg--secondary;
 }
 
 .about__wrapper {
   max-width: 80vw;
-  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // padding-top: 50px;
+  // padding-bottom: 50px;
 
-  background-color: $color-bg--white;
+  text-align: center;
+
+  background-color: $color-bg--white-50;
+  box-shadow: 0px 4px 24px 1px $color-bg--black-30;
 }
 
 
 .about__title {
+  // @include reset;
 }
 
 
 .about__desc {
+  @include reset;
+  margin-bottom: 10px;
 }

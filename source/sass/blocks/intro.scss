@@ -3,9 +3,10 @@
   align-items: center;
   min-height: 100vh;
 
-  background-color: aquamarine;
+  background-color: $color-bg--secondary;
   // background-image: url("../img/");
-  // background-image: url("");
+  // background-image: url("https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-image: url("../img/bg-intro-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -14,17 +15,18 @@
 
 
 .intro__quote {
-  max-width: 85vw;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 15px;
 
-  background-color: $color--black-50;
+  background-color: $color-bg--black-50;
 }
 
 
 .intro__title {
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 
+  font-size: calc(var(--index) * 3.1);
   color: $color--white;
 }
 

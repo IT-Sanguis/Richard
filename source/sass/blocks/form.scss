@@ -7,9 +7,20 @@
 
 
 .form__input {
+  background-color: #f4f4f4;
+
+  margin-bottom: 5px;
+  padding: 15px 20px;
+
+  border: none;
+  // line-height: 1.67;
 
   &--text {
     resize: none;
+  }
+
+  &::placeholder {
+    // color: #808080;
   }
 }
 

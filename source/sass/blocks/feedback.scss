@@ -1,0 +1,22 @@
+.feedback {
+  width: 50vw;
+  padding: 50px;
+
+  color: $color--white;
+
+  background-color: $color-bg--modal;
+}
+
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback__policy-desc {
+  @include reset;
+}
+
+
+.feedback__policy-link {
+  color: $color--link;
+}

@@ -11,18 +11,45 @@
   @include reset-list;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-.social__item {
-  padding: 5px;
-}
-.social__link {
-  padding: 5px;
-  // box-shadow: 6px 6px 12px rgba(255, 211, 95, 0.3), -8px -8px 12px #FFFFFF;
+  justify-content: space-between;
 
-  // svg {
-  //   fill: $color--primary;
-  // }
+  // padding: 5px;
+}
+
+
+.social__item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 5px;
+
+  box-shadow: 6px 6px 12px rgba(255, 211, 95, 0.3), -8px -8px 12px $color--white;
+
+  border-radius: 10px;
+
+  transition: box-shadow 0.4s ease-in-out;
+
+  svg {
+    fill: $color--logo;
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 2px rgba(255, 211, 95, 0.4), -1px -1px 2px $color--white;
+    transition: box-shadow 0.4s ease-in-out;
+  }
 
   &--instagram {
   }

@@ -1,21 +1,38 @@
 .page-footer {
+  // min-height: 100px;
+  padding: 30px 0;
+
+  background-color: $color-btn--primary;
+
+  // box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.3),
+  // inset 0 0 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.page-footer__wrapper {
   display: flex;
-  // flex-wrap: wrap;
-  // background-color: aqua;
+
+    // flex-wrap: wrap;
 }
 
 .page-footer__logo {
   display: flex;
   align-items: center;
 
+  margin-right: 30px;
+
   // margin-right: 0;
 }
 
-.page-footer__wrapper {
+.page-footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // align-items: stretch;
   flex: 1 1 auto;
 }
 
 .page-footer__nav {
+  margin-bottom: 25px;
 }
 
 
@@ -25,15 +42,51 @@
 
 .page-footer__info{
   display: flex;
+  // flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
-
-.page-footer__copyright {
+.page-footer__address {
   @include reset;
+  position: relative;
+
+  // margin-bottom: 10px;
+
+  font-size: 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25px;
+
+    width: 20px;
+    height: 30px;
+
+    background-image: url("../img/icon-pin.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+  }
 }
+
+// .page-footer__copyright {
+//   @include reset;
+// }
 
 
 .page-footer__policy {
+  @include reset;
+
+  font-size: 1rem;
+
+  color: inherit;
+
+  &:hover {
+    color: $color-btn--accent;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

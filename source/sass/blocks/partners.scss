@@ -4,21 +4,35 @@
   display: flex;
   align-items: center;
 
-  background-color: aquamarine;
+
+  background-color: $color-bg--secondary-dark;
+  background-image: url("../img/bg-partners-desktop@1x.jpg");
+  // background-image: url("https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  // background-image: url("https://remont-bnt.ru/wp-content/uploads/2021/06/slider-img-6-scaled.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 10%;
 }
 
 .partners__wrapper {
   width: 80vw;
 
-  padding: 15px;
+  // padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  color: $color--white;
+  text-align: center;
 
   // background-color: $color-bg--white;
-  background-color: $color--white-50;
+  background-color: $color-bg--black-80;
 }
 
 .partners__title {
-}
-.partners__slogan {
+  color: inherit;
 }
 .partners__desc {
+  @include reset;
+  color: inherit;
 }

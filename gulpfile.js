@@ -64,7 +64,7 @@ function cleanPHP() {
 function copy() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
+    // "source/img/**",
     "source/js/**",
     "source/libs/**",
     "source/*.html",
@@ -110,7 +110,7 @@ function php() {
 
 
 function images() {
-  return gulp.src(["build/img/**/*.{png,jpg,svg}"])
+  return gulp.src(["source/img/**/*.{png,jpg,svg}"])
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 5}),
     imagemin.mozjpeg({quality: 70, progressive: true}),
@@ -134,13 +134,11 @@ function exportWebP() {
   return gulp.src(["build/img/**/*.{png,jpg}", "!build/img/favicons/**/*"])
     .pipe(imagemin([
       webp({
-        quality: 80
+        quality: 75
       })
     ]))
     .pipe(extReplace(".webp"))
     .pipe(gulp.dest("build/img"));
-
-
 }
 
 

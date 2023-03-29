@@ -5,13 +5,15 @@
 
 .title {
   @include reset;
+  margin: 0 auto;
+  margin-bottom: 1.5vh;
 
   font-family: $font-family--title;
+  font-size: calc(var(--index) * 2.5);
   // font-size: 4rem;
-  font-size: calc(var(--index) * 2.05);
       // font-size: 3.3vw;
-
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
+
 }

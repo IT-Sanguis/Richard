@@ -12,10 +12,17 @@ if (!defined('TOKEN') || !defined('CHAT_ID')) {
 $token = TOKEN;
 $chat_id = CHAT_ID;
 
+
+$phone = preg_replace('/\D/', '', $_POST['phone']);
+if (substr($phone, 0) == '8') {
+    $phone = '7'.substr($phone, 0);
+}
+// $phone = '+'.substr($phone, 0);
+
 //Определяем переменные для передачи данных из нашей формы
 if ($_POST['act'] == 'order') {
     $name = ($_POST['name']);
-    $phone = '<a+href="tel:%2B'.$_POST['phone'].'">%2B'.$_POST['phone'].'</a>';
+    $phone = '<a+href="tel:%2B'.$phone.'">%2B'.$phone.'</a>';
 	$text = ($_POST['text']??'');
     $email = ($_POST['email']??'');
     // if ($_POST['email']) {
@@ -47,6 +54,14 @@ $txt = "";
 //Выводим сообщение об успешной отправке
     if ($sendToTelegram) {
         echo 'Спасибо! Ваша заявка принята. Мы свяжемся с вами в ближайшее время.';
+        // echo '<script>';
+        // echo 'const modalFeedbackT = document.querySelector(".modal.feedback");';
+        // echo 'const modalSuccessT = document.querySelector(".modal.success");';
+        // echo 'modalFeedbackT.classList.remove("modal--show");';
+        // echo 'modalSuccessT.classList.remove("modal--show");';
+        // echo 'modalSuccessT.offsetWidth = modalSuccessT.offsetWidth;';
+        // echo 'modalSuccessT.classList.add("modal--show");';
+        // echo '</script>';
     }
 
 //А здесь сообщение об ошибке при отправке
