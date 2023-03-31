@@ -10,15 +10,19 @@ const btnCloseFailure = modalFailure.querySelector(".modal__btn");
 
 const form = modalFeedback.querySelector(".form");
 
+const inputName = document.getElementById("name");
 const inputPhone = document.getElementById("phone");
 
 btnOpenFeedback.addEventListener("click", function (evt) {
   evt.preventDefault();
+  lastFocus = document.activeElement;
   modalFeedback.classList.remove("modal__window--show");
   modalFeedback.offsetWidth = modalFeedback.offsetWidth;
   modalFeedback.classList.add("modal__window--show");
+  inputName.focus();
 });
 
+let lastFocus;
 
 function phoneMask(evt) {
   let val = evt.target.value.replace(/\D/g, "");
@@ -52,6 +56,7 @@ inputPhone.addEventListener("input", phoneMask);
 btnCloseFeedback.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalFeedback.classList.remove("modal__window--show");
+  lastFocus.focus();
 });
 
 // form.addEventListener("submit", function(evt) {
@@ -75,6 +80,7 @@ function submitForm(evt) {
       modalSuccess.classList.remove("modal__window--show");
       modalSuccess.offsetWidth = modalSuccess.offsetWidth;
       modalSuccess.classList.add("modal__window--show");
+      btnCloseSuccess.focus();
     })
     .catch(error => {
       console.error(error);
@@ -82,6 +88,7 @@ function submitForm(evt) {
       modalFailure.classList.remove("modal__window--show");
       modalFailure.offsetWidth = modalFailure.offsetWidth;
       modalFailure.classList.add("modal__window--show");
+      btnCloseFailure.focus();
     });
 }
 
@@ -90,11 +97,13 @@ form.addEventListener('submit', submitForm);
 btnCloseSuccess.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalSuccess.classList.remove("modal__window--show");
+  lastFocus.focus();
 });
 
 btnCloseFailure.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalFailure.classList.remove("modal__window--show");
+  lastFocus.focus();
 });
 
 window.addEventListener("keydown", function (evt) {
@@ -102,14 +111,17 @@ window.addEventListener("keydown", function (evt) {
     if (modalFeedback.classList.contains("modal__window--show")) {
       evt.preventDefault();
       modalFeedback.classList.remove("modal__window--show");
+      lastFocus.focus();
     }
     if (modalSuccess.classList.contains("modal__window--show")) {
       evt.preventDefault();
       modalSuccess.classList.remove("modal__window--show");
+      lastFocus.focus();
     }
     if (modalFailure.classList.contains("modal__window--show")) {
       evt.preventDefault();
       modalFailure.classList.remove("modal__window--show");
+      lastFocus.focus();
     }
   }
 });

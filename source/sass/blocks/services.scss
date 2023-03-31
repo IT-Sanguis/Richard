@@ -1,5 +1,7 @@
 .services {
   min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   display: flex;
   align-items: center;
@@ -10,8 +12,10 @@
   background: linear-gradient(-45deg, #bd987b, #d1cac7, #315d6e, #3b4578);
   // background: linear-gradient(-45deg, #f4f4f4, #bd987b, #d1cac7, #315d6e);
 	background-size: 400% 400%;
+
 	animation: gradient 15s ease infinite;
 }
+
 
 .services__wrapper {
   max-width: 80vw;
@@ -20,7 +24,7 @@
 
   background-color: $color-bg--white-50;
 
-  box-shadow: 0px 4px 24px 1px $color-bg--black-30;
+  box-shadow: 0 4px 24px 1px $color-bg--black-30;
 }
 
 
@@ -36,7 +40,6 @@
   // width: 60vw;
   // text-align: center;
 }
-
 
 
 .services__list {
@@ -68,6 +71,7 @@
 
   border-radius: 10px;
 
+
   &::after {
     content: "";
     position: absolute;
@@ -83,31 +87,27 @@
     transform: translate(-50%);
   }
 
+
   &--design::after {
       background-image: url("../img/services-icon-design.svg");
   }
-
 
   &--manufacture::after {
       background-image: url("../img/services-icon-manufacture.svg");
   }
 
-
   &--complete::after {
       background-image: url("../img/services-icon-complete.svg");
   }
-
 
   &--deliver::after {
       background-image: url("../img/services-icon-delivery.svg");
   }
 
-
   &--assembly::after {
       background-image: url("../img/services-icon-assembly.svg");
 
   }
-
 
   &--guaranty::after {
       background-image: url("../img/services-icon-guaranty.svg");
@@ -118,18 +118,13 @@
 .services__desc {
   @include reset;
   margin-top: 5 px;
-
 }
 
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+	0% {background-position: 0% 50%;}
+
+	50% {background-position: 100% 50%;}
+
+	100% {background-position: 0% 50%;}
 }

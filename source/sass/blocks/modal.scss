@@ -11,20 +11,40 @@
   transform: translate(-50%, -50%);
 
 
+  // animation: fadein reverse 0.4s;
+
+
   &--success {
     z-index: 2;
+    // display: block;
 
     background-color: $color-bg--primary;
+
+    box-shadow:  0 0 20px 5px $color-bg--black-50;
   }
 
   &--failure {
     z-index: 2;
+    // display: block;
 
     background-color: $color-bg--primary;
+
+    box-shadow:  0 0 20px 5px $color-bg--black-50;
+
+    .modal__btn-wrapper {
+      padding: 25px 20px;
+    }
+
+    .modal__btn {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
 
   &--show {
     display: block;
+
+    animation: fadein 0.4s;
   }
 }
 
@@ -79,7 +99,8 @@
 
   cursor: pointer;
 
-  &::after, &::before {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     // top: 15px;
@@ -88,6 +109,7 @@
     height: 3px;
     background-color: $color-bg--white;
     // border-radius: 3px;
+    transition: background-color 0.25s ease;
   }
 
   &::before {
@@ -97,4 +119,20 @@
   &::after {
     transform: translate(-50%, 50%) rotate(45deg);
   }
+
+  &:hover::after,
+  &:hover::before {
+    background-color: $color-btn--accent;
+    transition: background-color 0.25s ease;
+  }
+
+  &:active::after,
+  &:active::before {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

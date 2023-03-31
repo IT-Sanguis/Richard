@@ -1,11 +1,11 @@
 const swiperKitchen = new Swiper(".gallery__slider--kitchen", {
   speed: 400,
-  spaceBetween: 75,
+  spaceBetween: 50,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
-    clickable: true,
+    // clickable: true,
     dynamicBullets: true,
   },
   navigation: {
@@ -19,8 +19,8 @@ const swiperKitchen = new Swiper(".gallery__slider--kitchen", {
   grabCursor: true,
   // slidesOffsetBefore: 150,
   // slidesOffsetAfter: 150,
-  slidesPerView: 3,
-  centeredSlides: true,
+  slidesPerView: 2,
+  // centeredSlides: true,
   // autoHeight: true,
   autoplay: {
     delay: 4000,
@@ -35,19 +35,19 @@ const swiperKitchen = new Swiper(".gallery__slider--kitchen", {
   // zoom: {
   //   maxRatio: 5,
   // },
-  slideToClickedSlide: true,
+  // slideToClickedSlide: true,
 
 
 });
 
 const swiperCabinets = new Swiper(".gallery__slider--cabinets", {
   speed: 400,
-  spaceBetween: 75,
+  spaceBetween: 50,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
-    clickable: true,
+    // clickable: true,
     dynamicBullets: true,
   },
   navigation: {
@@ -73,21 +73,22 @@ const swiperCabinets = new Swiper(".gallery__slider--cabinets", {
     enabled: true,
     onlyInViewport: true,
   },
+  // slideToClickedSlide: true,
   // hashNavigation:true,
-    // zoom: {
+  // zoom: {
   //   maxRatio: 5,
   // },
-  slideToClickedSlide: true,
+
 });
 
 const swiperHallways = new Swiper(".gallery__slider--hallways", {
   speed: 400,
-  spaceBetween: 75,
-  // loop: true,
+  spaceBetween: 50,
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
-    clickable: true,
+    // clickable: true,
     dynamicBullets: true,
   },
   navigation: {
@@ -101,15 +102,20 @@ const swiperHallways = new Swiper(".gallery__slider--hallways", {
   grabCursor: true,
   // slidesOffsetBefore: 150,
   // slidesOffsetAfter: 150,
-  slidesPerView: 3,
-  watchOverflow: true,
-  centerInsufficientSlides: true,
+  slidesPerView: 2,
+  // watchOverflow: true,
+  // centerInsufficientSlides: true,
   // centeredSlides: true,
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+  // slideToClickedSlide: true,
   // breakpoints: {
   //   // when window width is >= 320px
   //   320: {
@@ -127,14 +133,9 @@ const swiperHallways = new Swiper(".gallery__slider--hallways", {
   //     spaceBetween: 40,
   //   }
   // },
-  // keyboard: {
-  //   enabled: true,
-  //   onlyInViewport: true,
-  // },
   // hashNavigation:true,
-    // zoom: {
+  // zoom: {
   //   maxRatio: 5,
   // },
-  // slideToClickedSlide: true,
 
 });
