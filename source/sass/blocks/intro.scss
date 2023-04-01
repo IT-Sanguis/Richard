@@ -8,7 +8,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: 0 10%;
+  // background-position: 0 10%;
+  background-position: center;
 }
 
 
@@ -17,7 +18,7 @@
   margin: 0 auto;
   padding: 15px;
 
-  background-color: $color-bg--black-50;
+  background-color: $color-bg--black-70;
 }
 
 

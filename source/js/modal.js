@@ -11,6 +11,7 @@ const btnCloseFailure = modalFailure.querySelector(".modal__btn");
 const form = modalFeedback.querySelector(".form");
 
 const inputName = document.getElementById("name");
+const inputEmail = document.getElementById("email");
 const inputPhone = document.getElementById("phone");
 
 btnOpenFeedback.addEventListener("click", function (evt) {
@@ -24,8 +25,32 @@ btnOpenFeedback.addEventListener("click", function (evt) {
 
 let lastFocus;
 
-function phoneMask(evt) {
-  let val = evt.target.value.replace(/\D/g, "");
+
+// function validateName(name) {
+//   if (name.trim() === "") {
+//     return false;
+//   }
+//   const regex = /^[a-zA-Zа-яА-ЯёЁІіЇїЄє\s-]+$/;
+//   if (!regex.test(name)) {
+//     return false;
+//   }
+//   return true;
+// }
+
+// function validateEmail(email) {
+//   const regex = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
+
+//   return (email.value.trim() === "") || regex.test(email.value.trim());
+// }
+
+// function validateText(text) {
+//   const regex = /^[a-zA-Zа-яА-ЯёЁ0-9\s\.,!?()-]+$/;
+//   return regex.test(textarea.value);
+// }
+
+
+function validatePhone(phone) {
+  let val = phone.target.value.replace(/\D/g, "");
 
   if (val) {
     if (val[0] === "7" || val[0] === "8") {
@@ -48,10 +73,13 @@ function phoneMask(evt) {
   //   return false;
   // }
 
-  evt.target.value = val;
+  phone.target.value = val;
 }
 
-inputPhone.addEventListener("input", phoneMask);
+// inputName.addEventListener("input", validateName);
+inputPhone.addEventListener("input", validatePhone);
+// inputEmail.addEventListener("input", validateEmail);
+
 
 btnCloseFeedback.addEventListener("click", function (evt) {
   evt.preventDefault();

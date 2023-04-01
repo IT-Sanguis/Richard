@@ -92,5 +92,11 @@
   }
 }
 
-
+@media (max-width: $desktop-width--min) {
+  .btn {
+    &--top {
+      display: none;
+    }
+  }
+}
 

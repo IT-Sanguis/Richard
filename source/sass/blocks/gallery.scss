@@ -1,10 +1,9 @@
 .gallery {
   min-height: 100vh;
-  // background-color: $color-bg--tertiary;
-
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #f4f4f4;
+
+  background-color: $color-bg--primary;
 }
 
 
@@ -45,14 +44,30 @@
   width: 100%;
   height: 400px;
   object-fit: cover;
+  // object-position: right bottom;
 
   border-radius: 15px;
 
 }
 
+.gallery__slider--kitchen .gallery__img {
+  // object-position: center center;
+  // object-position: 50% 50%;
+  // object-position: 10% 30%;
+}
+
 .gallery__slider--cabinets .gallery__img {
   // width: 300px;
   height: 500px;
+    // object-position: right bottom;
+  // object-position: 50% 50%;
+  // object-position: 10% 30%;
+}
+
+.gallery__slider--hallways .gallery__img {
+  object-position: center 80%;
+  // object-position: 50% 50%;
+  // object-position: 10% 30%;
 }
 
 

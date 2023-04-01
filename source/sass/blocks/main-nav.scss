@@ -16,6 +16,10 @@
 
 
 .main-nav__item {
+
+  &--main {
+    display: none;
+  }
 }
 
 
@@ -27,33 +31,45 @@
 }
 
 
-// @media (max-width: $desktop-width--min) {
-//   .main-nav {
-//     display: none;
+@media (max-width: $desktop-width--min) {
+  .main-nav {
+    display: none;
 
-//     &--open {
-//       display: flex;
-//       width: 100%;
-//       flex-direction: column;
+    &--open {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      z-index: 999;
 
-//       animation-name: fadein;
-//       animation-duration: 0.6s;
-//       // animation-direction: alternate;
+      display: flex;
+      flex-direction: column;
 
+      width: 100%;
+      padding: 10px;
 
+      background-color: $color-bg--tertiary;
 
-//       .main-nav__list {
-//         justify-content: flex-start;
-//         flex-direction: column;
-//       }
+      box-shadow: 0px 9px 10px -5px $color-bg--black-50;
 
+      // animation-name: fadein;
+      // animation-duration: 0.6s;
+      // animation-direction: alternate;
 
-//       .account__text {
-//         display: none;
-//       }
-//     }
-//   }
-// }
+      .main-nav__list {
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+
+      .main-nav__item {
+        margin: 10px;
+
+        &--main {
+          display: block;
+        }
+      }
+    }
+  }
+}
 
 // @keyframes fadein {
 //   0% {transform: translateY(-2000px);}

@@ -6,11 +6,8 @@
   display: flex;
   align-items: center;
 
-  // background-color: $color-bg--secondary-dark;
-
-  // background: linear-gradient(-45deg, #3b4578, #d1cac7, #bd987b, #f4f4f4);
+  background-color: $color-bg--secondary-dark;
   background: linear-gradient(-45deg, #bd987b, #d1cac7, #315d6e, #3b4578);
-  // background: linear-gradient(-45deg, #f4f4f4, #bd987b, #d1cac7, #315d6e);
 	background-size: 400% 400%;
 
 	animation: gradient 15s ease infinite;
@@ -118,6 +115,16 @@
 .services__desc {
   @include reset;
   margin-top: 5 px;
+}
+
+@media (max-width: $desktop-width--min) {
+.services__list {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+
+  text-align: center;
+  // grid-template-rows: 1fr 1fr;
+}
 }
 
 

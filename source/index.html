@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
-<!-- <html lang="ru" class="no-js"> -->
+
+<html lang="ru" class="no-js">
 
 <head>
   <meta charset="UTF-8">
@@ -29,7 +29,8 @@
 
   <link rel="stylesheet" type="text/css" href="libs/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
-  <!-- <script src="libs/modernizr-custom.js"></script> -->
+
+  <script src="libs/modernizr-custom.js"></script>
 
   <meta property="og:title" content="Richard | Мебель">
   <meta property="og:description"
@@ -49,7 +50,8 @@
   <style>
     ::selection {
       color: #ffffff;
-      background-color: #bd987b;
+      background-color: rgba(255,99,71,0.8);
+      /* background-color: #bd987b; */
     }
   </style>
   <!-- ! ПОДОБРАТЬ -->
@@ -61,7 +63,7 @@
   </div>
 
   <!-- <header class="page-header js-nav" id="begin"> -->
-  <header class="page-header" id="begin">
+  <header class="page-header">
     <div class="container page-header__wrapper">
       <a class="page-header__logo logo" href="#">
         <svg class="logo__img" role="img" width="100" height="70" aria-labelledby="logotype">
@@ -69,9 +71,11 @@
           <use xlink:href="#logo"></use>
         </svg>
       </a>
-      <button class="page-header__burger" type="button" aria-label="Показать/скрыть меню"></button>
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--main">
+            <a class="main-nav__link" href="#begin">Главная</a>
+          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#about">О нас</a>
           </li>
@@ -92,11 +96,12 @@
         </svg>
         <span>+7 (919) 198-33-69</span>
       </a>
+      <button class="page-header__burger" type="button" aria-label="Показать/скрыть меню"></button>
     </div>
   </header>
 
   <main>
-    <section class="intro">
+    <section class="intro" id="begin">
       <div class="container">
         <h1 class="visually-hidden">Сайт мебельной фабрики &laquo;Richard&raquo;</h1>
         <blockquote class="intro__quote" cite="https://richard-mebel.ru/">
@@ -128,7 +133,7 @@
       <div class="container gallery__wrapper">
         <h2 class="gallery__title title">Наши работы</h2>
         <section class="gallery__block">
-          <h3 class="visually-hidden">Кухни:</h3>
+          <h3 class="visually-hidden">Кухни</h3>
 
           <!-- Slider main container -->
           <div class="gallery__slider gallery__slider--kitchen swiper">
@@ -209,7 +214,7 @@
         </section>
 
         <section class="gallery__block">
-          <h3 class="visually-hidden">Шкафы:</h3>
+          <h3 class="visually-hidden">Шкафы</h3>
 
           <!-- Slider main container -->
           <div class="gallery__slider gallery__slider--cabinets swiper">
@@ -251,7 +256,7 @@
 
         </section>
         <section class="gallery__block">
-          <h3 class="visually-hidden">Прихожие и комоды:</h3>
+          <h3 class="visually-hidden">Прихожие и комоды</h3>
 
           <!-- Slider main container -->
           <div class="gallery__slider gallery__slider--hallways swiper">
@@ -358,6 +363,9 @@
       </a>
       <div class="page-footer__content">
         <ul class="page-footer__nav footer-nav">
+          <li class="footer-nav__item footer-nav__item--main">
+            <a class="footer-nav__link" href="#begin">Главная</a>
+          </li>
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#about">О нас</a>
           </li>
@@ -406,9 +414,11 @@
     <form class="feedback__form form" method="post" action="send.php" target="_self">
       <label class="visually-hidden" for="name">Ваше имя:</label>
       <input class="form__input" id="name" type="text" name="name" placeholder="Ваше имя *" required>
+      <!-- <input class="form__input" id="name" type="text" name="name" placeholder="Ваше имя *" aria-required="true"> -->
 
       <label class="visually-hidden" for="phone">Ваш телефон:</label>
       <input class="form__input" id="phone" type="tel" name="phone" maxlength="17" placeholder="Ваш телефон *" required>
+      <!-- <input class="form__input" id="phone" type="tel" name="phone" maxlength="17" placeholder="Ваш телефон *" aria-required="true"> -->
       <!-- <input class="form__input" id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" maxlength="12" placeholder="Ваш телефон *" required> -->
 
       <label class="visually-hidden" for="email">Ваша почта:</label>
@@ -452,9 +462,10 @@
   </section>
 
   <script src="libs/swiper-bundle.min.js"></script>
-  <script src="js/index.min.js"></script>
+  <!-- <script src="js/index.min.js"></script>
   <script src="js/slider.min.js"></script>
-  <script src="js/modal.min.js"></script>
+  <script src="js/modal.min.js"></script> -->
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

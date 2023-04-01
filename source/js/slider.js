@@ -1,6 +1,7 @@
 const swiperKitchen = new Swiper(".gallery__slider--kitchen", {
   speed: 400,
-  spaceBetween: 50,
+  spaceBetween: 10,
+  // spaceBetween: 50,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -19,7 +20,8 @@ const swiperKitchen = new Swiper(".gallery__slider--kitchen", {
   grabCursor: true,
   // slidesOffsetBefore: 150,
   // slidesOffsetAfter: 150,
-  slidesPerView: 2,
+  slidesPerView: 1,
+  // slidesPerView: 2,
   // centeredSlides: true,
   // autoHeight: true,
   autoplay: {
@@ -36,13 +38,31 @@ const swiperKitchen = new Swiper(".gallery__slider--kitchen", {
   //   maxRatio: 5,
   // },
   // slideToClickedSlide: true,
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    959: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    }
+  },
 
 
 });
 
 const swiperCabinets = new Swiper(".gallery__slider--cabinets", {
   speed: 400,
-  spaceBetween: 50,
+  spaceBetween: 10,
+  // spaceBetween: 50,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -61,8 +81,9 @@ const swiperCabinets = new Swiper(".gallery__slider--cabinets", {
   grabCursor: true,
   // slidesOffsetBefore: 150,
   // slidesOffsetAfter: 150,
-  slidesPerView: 3,
-  centeredSlides: true,
+  slidesPerView: 1,
+  // slidesPerView: 3,
+  // centeredSlides: true,
   // autoHeight: true,
   autoplay: {
     delay: 4000,
@@ -78,12 +99,30 @@ const swiperCabinets = new Swiper(".gallery__slider--cabinets", {
   // zoom: {
   //   maxRatio: 5,
   // },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    959: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    }
+  },
 
 });
 
 const swiperHallways = new Swiper(".gallery__slider--hallways", {
   speed: 400,
-  spaceBetween: 50,
+  spaceBetween: 5,
+  // spaceBetween: 50,
   loop: true,
   pagination: {
     el: '.swiper-pagination',
@@ -102,7 +141,8 @@ const swiperHallways = new Swiper(".gallery__slider--hallways", {
   grabCursor: true,
   // slidesOffsetBefore: 150,
   // slidesOffsetAfter: 150,
-  slidesPerView: 2,
+  slidesPerView: 1,
+  // slidesPerView: 2,
   // watchOverflow: true,
   // centerInsufficientSlides: true,
   // centeredSlides: true,
@@ -116,23 +156,23 @@ const swiperHallways = new Swiper(".gallery__slider--hallways", {
     onlyInViewport: true,
   },
   // slideToClickedSlide: true,
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30,
-  //   },
-  //   // when window width is >= 640px
-  //   640: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 40,
-  //   }
-  // },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 640px
+    960: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    }
+  },
   // hashNavigation:true,
   // zoom: {
   //   maxRatio: 5,

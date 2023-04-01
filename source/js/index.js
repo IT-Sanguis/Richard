@@ -1,9 +1,7 @@
 const anchors = document.querySelectorAll('a[href^="#"]');
 
 const burger = document.querySelector(".page-header__burger");
-
-
-// scroll
+const nav = document.querySelector(".main-nav");
 
 anchors.forEach(element => {
   element.addEventListener('click', function (e) {
@@ -19,14 +17,9 @@ anchors.forEach(element => {
   });
 });
 
-
-
-// burger
-
-
 burger.addEventListener("click", function (e) {
   e.preventDefault();
   burger.classList.toggle("page-header__burger--open");
-  // nav.classList.toggle("main-nav--open");
+  nav.classList.toggle("main-nav--open");
 });
 
