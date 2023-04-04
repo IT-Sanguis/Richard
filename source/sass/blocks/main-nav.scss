@@ -16,7 +16,6 @@
 
 
 .main-nav__item {
-
   &--main {
     display: none;
   }
@@ -49,7 +48,7 @@
 
       background-color: $color-bg--tertiary;
 
-      box-shadow: 0px 9px 10px -5px $color-bg--black-50;
+      box-shadow: 0 9px 10px -5px $color-bg--black-50;
 
       // animation-name: fadein;
       // animation-duration: 0.6s;

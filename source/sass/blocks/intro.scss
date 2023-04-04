@@ -63,7 +63,6 @@
   font-size: calc(var(--index) * 1.5);
   text-align: right;
   color: $color--white;
-
 }
 
 @media (max-width: $desktop-width--min) {
@@ -99,6 +98,5 @@
     background-size: cover;
     // background-position: 0 10%;
     background-position: center;
-
   }
 }

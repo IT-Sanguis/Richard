@@ -1,6 +1,6 @@
 .social {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .social__text {
@@ -41,7 +41,7 @@
   box-shadow: 6px 6px 12px rgba(255, 211, 95, 0.3), -8px -8px 12px $color--white;
 
   border-radius: 10px;
-  border: 1px solid rgba(0,0,0,0.02);
+  border: 1px solid rgba(0, 0, 0, 0.02);
 
   transition: box-shadow 0.4s ease-in-out;
 
@@ -54,10 +54,9 @@
     transition: box-shadow 0.4s ease-in-out;
     border: none;
   }
-
-  &--instagram {
-  }
-  &--vk {
-  }
+  // &--instagram {
+  // }
+  // &--vk {
+  // }
 }
 

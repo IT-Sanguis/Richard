@@ -1,8 +1,6 @@
 // .title {
 // }
 
-
-
 .title {
   @include reset;
   margin: 0 auto;
@@ -11,9 +9,8 @@
   font-family: $font-family--title;
   font-size: calc(var(--index) * 2.5);
   // font-size: 4rem;
-      // font-size: 3.3vw;
+  // font-size: 3.3vw;
   line-height: 1.2;
   font-weight: 700;
   text-align: center;
-
 }

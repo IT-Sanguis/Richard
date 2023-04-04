@@ -20,7 +20,7 @@
 
     background-color: $color-bg--primary;
 
-    box-shadow:  0 0 20px 5px $color-bg--black-50;
+    box-shadow: 0 0 20px 5px $color-bg--black-50;
   }
 
   &--failure {
@@ -29,7 +29,7 @@
 
     background-color: $color-bg--primary;
 
-    box-shadow:  0 0 20px 5px $color-bg--black-50;
+    box-shadow: 0 0 20px 5px $color-bg--black-50;
 
     .modal__btn-wrapper {
       padding: 25px 20px;
@@ -77,7 +77,7 @@
 
   text-align: center;
 
-  background-color: #315D6E;
+  background-color: #315d6e;
 }
 
 
@@ -139,6 +139,11 @@
 }
 
 @keyframes fadein {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

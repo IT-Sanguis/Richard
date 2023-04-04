@@ -34,7 +34,6 @@
 }
 
 
-
 @media (max-width: $desktop-width--min) {
   .feedback {
     width: 65vw;
@@ -51,6 +50,6 @@
 @media (max-width: $mobile-width--max) {
   .feedback {
     width: 85vw;
-    padding: 60px 30px 30px
+    padding: 60px 30px 30px;
   }
 }

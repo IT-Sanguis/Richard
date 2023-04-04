@@ -7,7 +7,7 @@
   align-items: center;
 
   background-color: $color-bg--secondary-dark;
-  background: linear-gradient(-45deg, #bd987b, #d1cac7, #315d6e, #3b4578);
+  background-image: linear-gradient(-45deg, #bd987b, #d1cac7, #315d6e, #3b4578);
   background-size: 400% 400%;
 
   animation: gradient 15s ease infinite;
@@ -103,7 +103,6 @@
 
   &--assembly::after {
     background-image: url("../img/services-icon-assembly.svg");
-
   }
 
   &--guaranty::after {
