@@ -1,4 +1,5 @@
 const btnOpenFeedback = document.querySelector(".btn--order");
+const btnOpenDesign = document.querySelector(".design__btn");
 
 const modalFeedback = document.querySelector(".modal__window.feedback");
 const modalSuccess = document.querySelector(".modal__window--success");
@@ -14,7 +15,17 @@ const inputName = document.getElementById("name");
 const inputEmail = document.getElementById("email");
 const inputPhone = document.getElementById("phone");
 
+
 btnOpenFeedback.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  lastFocus = document.activeElement;
+  modalFeedback.classList.remove("modal__window--show");
+  modalFeedback.offsetWidth = modalFeedback.offsetWidth;
+  modalFeedback.classList.add("modal__window--show");
+  inputName.focus();
+});
+
+btnOpenDesign.addEventListener("click", function (evt) {
   evt.preventDefault();
   lastFocus = document.activeElement;
   modalFeedback.classList.remove("modal__window--show");

@@ -8,9 +8,9 @@
 
   background-color: $color-bg--secondary-dark;
   background: linear-gradient(-45deg, #bd987b, #d1cac7, #315d6e, #3b4578);
-	background-size: 400% 400%;
+  background-size: 400% 400%;
 
-	animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite;
 }
 
 
@@ -86,52 +86,69 @@
 
 
   &--design::after {
-      background-image: url("../img/services-icon-design.svg");
+    background-image: url("../img/services-icon-design.svg");
   }
 
   &--manufacture::after {
-      background-image: url("../img/services-icon-manufacture.svg");
+    background-image: url("../img/services-icon-manufacture.svg");
   }
 
   &--complete::after {
-      background-image: url("../img/services-icon-complete.svg");
+    background-image: url("../img/services-icon-complete.svg");
   }
 
   &--deliver::after {
-      background-image: url("../img/services-icon-delivery.svg");
+    background-image: url("../img/services-icon-delivery.svg");
   }
 
   &--assembly::after {
-      background-image: url("../img/services-icon-assembly.svg");
+    background-image: url("../img/services-icon-assembly.svg");
 
   }
 
   &--guaranty::after {
-      background-image: url("../img/services-icon-guaranty.svg");
+    background-image: url("../img/services-icon-guaranty.svg");
   }
 }
 
 
 .services__desc {
   @include reset;
-  margin-top: 5 px;
+  margin-top: 5px;
 }
 
 @media (max-width: $desktop-width--min) {
-.services__list {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  .services__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 
-  text-align: center;
-  // grid-template-rows: 1fr 1fr;
+    text-align: center;
+    // grid-template-rows: 1fr 1fr;
+  }
 }
+
+
+@media (max-width: $tablet-width) {
+  .services__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+
+    text-align: center;
+    // grid-template-rows: 1fr 1fr;
+  }
 }
 
 
 @keyframes gradient {
-	0% {background-position: 0% 50%;}
+  0% {
+    background-position: 0% 50%;
+  }
 
-	50% {background-position: 100% 50%;}
+  50% {
+    background-position: 100% 50%;
+  }
 
-	100% {background-position: 0% 50%;}
+  100% {
+    background-position: 0% 50%;
+  }
 }

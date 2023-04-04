@@ -27,8 +27,17 @@
 
 @media (max-width: $desktop-width--min) {
   .footer-nav__item {
+    margin-right: 0;
+    margin-bottom: 20px;
+
     &--main {
       display: block;
     }
+  }
+}
+
+@media (max-width: $tablet-width--max) {
+  .footer-nav__item {
+    margin-bottom: 40px;
   }
 }

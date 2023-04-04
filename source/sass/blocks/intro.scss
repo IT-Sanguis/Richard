@@ -4,12 +4,36 @@
   min-height: 100vh;
 
   background-color: $color-bg--secondary;
-  background-image: url("../img/bg-intro-desktop@1x.jpg");
+  // background-image: url("../img/bg-intro-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   // background-position: 0 10%;
   background-position: center;
+}
+
+.no-js .intro {
+  background-image: url("../img/bg-intro-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-intro-desktop@2x.jpg");
+  }
+}
+
+.webp .intro {
+  background-image: url("../img/bg-intro-desktop@1x.webp");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-intro-desktop@2x.webp");
+  }
+}
+
+.no-webp .intro {
+  background-image: url("../img/bg-intro-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-intro-desktop@2x.jpg");
+  }
 }
 
 
@@ -40,4 +64,41 @@
   text-align: right;
   color: $color--white;
 
+}
+
+@media (max-width: $desktop-width--min) {
+  .no-js .intro {
+    background-image: url("../img/bg-intro-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-desktop@1x.jpg");
+    }
+  }
+
+  .webp .intro {
+    background-image: url("../img/bg-intro-tablet@1x.webp");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-desktop@1x.webp");
+    }
+  }
+
+  .no-webp .intro {
+    background-image: url("../img/bg-intro-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-intro-desktop@1x.jpg");
+    }
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .intro {
+    background-attachment: local;
+    background-size: cover;
+    // background-position: 0 10%;
+    background-position: center;
+
+  }
 }

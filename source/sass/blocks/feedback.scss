@@ -16,7 +16,7 @@
 
 .feedback__policy-desc {
   @include reset;
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 0.7rem;
 }
 
@@ -30,5 +30,27 @@
 
   &:active {
     opacity: 0.9;
+  }
+}
+
+
+
+@media (max-width: $desktop-width--min) {
+  .feedback {
+    width: 65vw;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .feedback {
+    width: 85vw;
+  }
+}
+
+@media (max-width: $mobile-width--max) {
+  .feedback {
+    width: 85vw;
+    padding: 60px 30px 30px
   }
 }

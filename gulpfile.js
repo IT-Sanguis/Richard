@@ -117,7 +117,7 @@ function images() {
   return gulp.src(["source/img/**/*.{png,jpg,svg}"])
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 5 }),
-      imagemin.mozjpeg({ quality: 70, progressive: true }),
+      imagemin.mozjpeg({ quality: 85, progressive: true }),
       // imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
@@ -138,7 +138,7 @@ function exportWebP() {
   return gulp.src(["build/img/**/*.{png,jpg}", "!build/img/favicons/**/*"])
     .pipe(imagemin([
       webp({
-        quality: 75
+        quality: 85
       })
     ]))
     .pipe(extReplace(".webp"))
@@ -184,28 +184,28 @@ function watchTask() {
 }
 
 
-exports.copy = copy;
-exports.copyImg = copyImg;
-exports.images = images;
-exports.exportWebP = exportWebP;
-exports.clean = clean;
-exports.cleanImg = cleanImg;
-exports.style = style;
-exports.server = server;
-exports.sprite = sprite;
+// exports.copy = copy;
+// exports.copyImg = copyImg;
+// exports.images = images;
+// exports.exportWebP = exportWebP;
+// exports.clean = clean;
+// exports.cleanImg = cleanImg;
+// exports.style = style;
+// exports.server = server;
+// exports.sprite = sprite;
 
 
 const build = gulp.series(clean, copy, style, js, images, sprite, exportWebP, html);
 const updateHTML = gulp.series(cleanHTML, html, reload);
 const updateJS = gulp.series(cleanJS, js, reload);
 const updatePHP = gulp.series(cleanPHP, php, reload);
-const updateIMG = gulp.series(cleanImg, copyImg, images, exportWebP, reload);
+// const updateIMG = gulp.series(cleanImg, copyImg, images, exportWebP, reload);
 
 
-exports.updateHTML = updateHTML;
-exports.updateJS = updateJS;
-exports.updateIMG = updateIMG;
-exports.updatePHP = updatePHP;
+// exports.updateHTML = updateHTML;
+// exports.updateJS = updateJS;
+// exports.updateIMG = updateIMG;
+// exports.updatePHP = updatePHP;
 exports.build = build;
 exports.default = gulp.series(build, gulp.parallel(server, watchTask));
 // exports.default = gulp.series(build, gulp.parallel(server, serverPHP, watchTask));

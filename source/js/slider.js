@@ -39,17 +39,14 @@ const swiperKitchen = new Swiper(".gallery__slider--kitchen", {
   // },
   // slideToClickedSlide: true,
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    // when window width is >= 480px
-    480: {
+    700: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    // when window width is >= 640px
     959: {
       slidesPerView: 2,
       spaceBetween: 50,
@@ -100,21 +97,22 @@ const swiperCabinets = new Swiper(".gallery__slider--cabinets", {
   //   maxRatio: 5,
   // },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    // when window width is >= 480px
-    480: {
+    700: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    // when window width is >= 640px
     959: {
       slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1200: {
+      slidesPerView: 3,
       spaceBetween: 50,
-    }
+    },
   },
 
 });
@@ -157,17 +155,10 @@ const swiperHallways = new Swiper(".gallery__slider--hallways", {
   },
   // slideToClickedSlide: true,
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    // when window width is >= 640px
     960: {
       slidesPerView: 2,
       spaceBetween: 50,

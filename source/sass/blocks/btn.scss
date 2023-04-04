@@ -1,10 +1,14 @@
 .btn {
   @include reset;
   display: inline-block;
+
   vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: none;
 
   cursor: pointer;
-
 
 
   &--order {
@@ -94,9 +98,11 @@
 
 @media (max-width: $desktop-width--min) {
   .btn {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+
     &--top {
       display: none;
     }
   }
 }
-
