@@ -2,11 +2,11 @@
   width: 50vw;
   padding: 50px;
 
-  color: $color--white;
+  color: $color--light;
 
   background-color: $color-bg--modal;
 
-  box-shadow: 0 0 20px 0 $color-bg--white-50;
+  box-shadow: 0 0 20px 0 $color-bg--dark-50;
 }
 
 .feedback__form {
@@ -18,6 +18,7 @@
   @include reset;
   margin-top: 20px;
   font-size: 0.7rem;
+  font-size: var(--font-size-xs);
 }
 
 
@@ -44,12 +45,19 @@
 @media (max-width: $tablet-width) {
   .feedback {
     width: 85vw;
+    padding: 60px 30px 30px;
+    // transform: translate(-50%, 50%);
   }
 }
 
 @media (max-width: $mobile-width--max) {
   .feedback {
     width: 85vw;
-    padding: 60px 30px 30px;
+    // max-height: 100%;
+    padding: 60px 20px 20px;
+  }
+
+  .feedback__policy-desc {
+    margin-top: 15px;
   }
 }

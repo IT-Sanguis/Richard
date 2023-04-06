@@ -1,4 +1,4 @@
-.modal__window {
+.modal {
   position: fixed;
   top: 50vh;
   left: 50vw;
@@ -10,26 +10,29 @@
 
   transform: translate(-50%, -50%);
 
+  overflow-y: auto;
 
   // animation: fadein reverse 0.4s;
 
 
   &--success {
+    top: 50vh;
     z-index: 2;
     // display: block;
 
     background-color: $color-bg--primary;
 
-    box-shadow: 0 0 20px 5px $color-bg--black-50;
+    box-shadow: 0 0 20px 5px $color-bg--dark-50;
   }
 
   &--failure {
+    top: 50vh;
     z-index: 2;
     // display: block;
 
     background-color: $color-bg--primary;
 
-    box-shadow: 0 0 20px 5px $color-bg--black-50;
+    box-shadow: 0 0 20px 5px $color-bg--dark-50;
 
     .modal__btn-wrapper {
       padding: 25px 20px;
@@ -60,8 +63,9 @@
   margin-bottom: 25px;
 
   font-size: 1.2rem;
+  font-size: var(--font-size-md);
   line-height: 1.33;
-  color: $color--black;
+  color: $color--dark;
 }
 
 
@@ -107,7 +111,7 @@
     // right: 0;
     width: 36px;
     height: 3px;
-    background-color: $color-bg--white;
+    background-color: $color-bg--light;
     // border-radius: 3px;
     transition: background-color 0.25s ease;
   }
@@ -133,10 +137,27 @@
 }
 
 @media (max-width: $tablet-width) {
-  .modal__window {
+  .modal {
+    top: 0;
+
     width: 85vw;
+
+    transform: translate(-50%, 95px);
   }
 }
+
+
+@media (max-width: $mobile-width--max) {
+  .modal {
+    top: 0;
+    // bottom: 0;
+
+    // max-height: 100%;
+
+    transform: translate(-50%, 70px);
+  }
+}
+
 
 @keyframes fadein {
   0% {

@@ -25,7 +25,7 @@ const swiperKitchen = new Swiper(".gallery__slider--kitchen", {
   // centeredSlides: true,
   // autoHeight: true,
   autoplay: {
-    delay: 4000,
+    delay: 5000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
@@ -83,7 +83,7 @@ const swiperCabinets = new Swiper(".gallery__slider--cabinets", {
   // centeredSlides: true,
   // autoHeight: true,
   autoplay: {
-    delay: 4000,
+    delay: 5000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
@@ -108,10 +108,6 @@ const swiperCabinets = new Swiper(".gallery__slider--cabinets", {
     959: {
       slidesPerView: 3,
       spaceBetween: 20,
-    },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 50,
     },
   },
 
@@ -145,7 +141,7 @@ const swiperHallways = new Swiper(".gallery__slider--hallways", {
   // centerInsufficientSlides: true,
   // centeredSlides: true,
   autoplay: {
-    delay: 4000,
+    delay: 5000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },

@@ -14,8 +14,8 @@ $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 
 // logo: #3b4578;
-$color--white: #ffffff;
-$color--black: #000000;
+$color--light: #ffffff;
+$color--dark: #000000;
 $color--accent: #27134e;
 $color--primary: #333333;
 $color--link: #0088cc;
@@ -24,14 +24,14 @@ $color--logo: #3b4578;
 $color--primary-50: rgba($color--primary, 0.5);
 $color--primary-80: rgba($color--primary, 0.8);
 
-$color-bg--white: $color--white;
-$color-bg--white-50: rgba($color--white, 0.5);
-$color-bg--black: $color--black;
-$color-bg--black-10: rgba($color--black, 0.1);
-$color-bg--black-30: rgba($color--black, 0.3);
-$color-bg--black-50: rgba($color--black, 0.5);
-$color-bg--black-70: rgba($color--black, 0.7);
-$color-bg--black-80: rgba($color--black, 0.8);
+$color-bg--light: $color--light;
+$color-bg--light-50: rgba($color--light, 0.5);
+$color-bg--dark: $color--dark;
+$color-bg--dark-10: rgba($color--dark, 0.1);
+$color-bg--dark-30: rgba($color--dark, 0.3);
+$color-bg--dark-50: rgba($color--dark, 0.5);
+$color-bg--dark-70: rgba($color--dark, 0.7);
+$color-bg--dark-80: rgba($color--dark, 0.8);
 $color-bg--primary: #f4f4f4;
 $color-bg--primary-10: rgba($color-bg--primary, 0.1);
 // $color-bg--secondary: #D7AA79;
@@ -42,11 +42,11 @@ $color-bg--accent: $color--accent;
 
 $color-bg--modal: $color--primary;
 
-$color-btn--white: $color--white;
-$color-btn--white-30: rgba($color--white, 0.3);
-$color-btn--white-50: rgba($color--white, 0.5);
-$color-btn--white-70: rgba($color--white, 0.7);
-$color-btn--white-80: rgba($color--white, 0.8);
+$color-btn--light: $color--light;
+$color-btn--light-30: rgba($color--light, 0.3);
+$color-btn--light-50: rgba($color--light, 0.5);
+$color-btn--light-70: rgba($color--light, 0.7);
+$color-btn--light-80: rgba($color--light, 0.8);
 $color-btn--primary: $color--logo;
 $color-btn--accent: rgb(255, 99, 71) ;
 $color-btn--accent-50: rgba($color-btn--accent, 0.5);
@@ -54,7 +54,17 @@ $color-btn--accent-80: rgba($color-btn--accent, 0.8);
 
 
 :root {
-  --index: calc(1vw + 1vh);
+  --font-fallback: calc(1vw + 1vh);
+
+  --font-size-xs: clamp(0.63rem, calc(0.64rem + -0.01vw), 0.64rem);
+  --font-size-sm: clamp(0.80rem, calc(0.78rem + 0.08vw), 0.84rem);
+  --font-size-base: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
+  --font-size-md: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+  --font-size-lg: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);
+  --font-size-xl: clamp(1.95rem, calc(1.71rem + 1.24vw), 2.66rem);
+  --font-size-xxl: clamp(2.44rem, calc(2.05rem + 1.93vw), 3.55rem);
+  --font-size-xxxl: clamp(3.05rem, calc(2.47rem + 2.93vw), 4.74rem);
+
 
   --swiper-theme-color: #ff6347;
 

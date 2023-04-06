@@ -41,3 +41,9 @@
     margin-bottom: 40px;
   }
 }
+
+@media (max-width: $mobile-width--max) {
+  .footer-nav__item {
+    margin-bottom: 20px;
+  }
+}

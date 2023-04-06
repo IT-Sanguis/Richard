@@ -27,16 +27,16 @@
     border: none;
     border-radius: 50%;
 
-    box-shadow: 0 2px 10px 0 $color-bg--black-30;
+    box-shadow: 0 2px 10px 0 $color-bg--dark-30;
 
     svg {
       transform: translate(-10%, 15%);
 
-      fill: $color--white;
+      fill: $color--light;
     }
 
     &:hover {
-      background-color: $color-btn--white;
+      background-color: $color-btn--light;
       // transition: background-color 0.2s ease-in;
 
       svg {
@@ -68,12 +68,12 @@
 
     line-height: 1;
 
-    // background-color: $color-btn--white-30;
-    background-color: $color-btn--white-80;
+    // background-color: $color-btn--light-30;
+    background-color: $color-btn--light-80;
 
     border-radius: 50%;
 
-    box-shadow: 0 2px 10px 0 $color-bg--black-10;
+    box-shadow: 0 2px 10px 0 $color-bg--dark-10;
 
 
     svg {
@@ -81,8 +81,8 @@
     }
 
     &:hover {
-      // background-color: $color-btn--white-70;
-      background-color: $color-btn--white;
+      // background-color: $color-btn--light-70;
+      background-color: $color-btn--light;
 
       svg {
         fill: $color-btn--accent;
@@ -90,7 +90,7 @@
     }
 
     &:active {
-      // background-color: $color-btn--white-50;
+      // background-color: $color-btn--light-50;
       box-shadow: 0 0 10px 2px $color-btn--accent;
     }
   }
@@ -103,6 +103,16 @@
 
     &--top {
       display: none;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-width--max) {
+  .btn {
+
+    &--submit {
+      min-height: 40px;
     }
   }
 }

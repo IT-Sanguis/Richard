@@ -1,9 +1,8 @@
 .about {
-  min-height: 100vh;
-
   display: flex;
   align-items: center;
 
+  min-height: 100vh;
   padding-top: 50px;
   padding-bottom: 50px;
 
@@ -18,11 +17,12 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
-  text-align: center;
+  // text-align: center;
+  // text-align: left;
 
-  background-color: $color-bg--white-50;
+  background-color: $color-bg--light-50;
 
-  box-shadow: 0 4px 24px 1px $color-bg--black-30;
+  box-shadow: 0 4px 24px 1px $color-bg--dark-30;
 }
 
 
@@ -33,7 +33,9 @@
 
 .about__desc {
   @include reset;
-  margin-bottom: 10px;
+
+  max-width: 75ch;
+  margin-bottom: 20px;
 }
 
 @media (max-width: $tablet-width) {

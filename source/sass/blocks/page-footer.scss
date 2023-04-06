@@ -4,7 +4,7 @@
 
   background-color: $color-bg--primary;
 
-  box-shadow: 0 1px 5px 0 $color-bg--black-30;
+  box-shadow: 0 1px 5px 0 $color-bg--dark-30;
 }
 
 .page-footer__wrapper {
@@ -53,6 +53,7 @@
   // margin-bottom: 10px;
 
   font-size: 1rem;
+  font-size: var(--font-size-base);
 
   &::before {
     content: "";
@@ -78,6 +79,7 @@
   @include reset;
 
   font-size: 1rem;
+  font-size: var(--font-size-base);
 
   color: inherit;
 
@@ -144,5 +146,11 @@
   .page-footer__logo {
     margin-right: 0;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: $mobile-width--max) {
+  .page-footer__logo {
+    margin-bottom: 30px;
   }
 }

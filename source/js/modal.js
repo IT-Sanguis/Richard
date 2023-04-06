@@ -1,9 +1,9 @@
 const btnOpenFeedback = document.querySelector(".btn--order");
 const btnOpenDesign = document.querySelector(".design__btn");
 
-const modalFeedback = document.querySelector(".modal__window.feedback");
-const modalSuccess = document.querySelector(".modal__window--success");
-const modalFailure = document.querySelector(".modal__window--failure");
+const modalFeedback = document.querySelector(".modal.feedback");
+const modalSuccess = document.querySelector(".modal--success");
+const modalFailure = document.querySelector(".modal--failure");
 
 const btnCloseFeedback = modalFeedback.querySelector(".modal__btn-close");
 const btnCloseSuccess = modalSuccess.querySelector(".modal__btn");
@@ -15,22 +15,53 @@ const inputName = document.getElementById("name");
 const inputEmail = document.getElementById("email");
 const inputPhone = document.getElementById("phone");
 
+const FOCUSABLE_ELEMENT_SELECTORS = 'a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="email"]:not([disabled]), input[type="tel"]:not([disabled])';
+
+
+
+function trapFocus(element) {
+  let focusableEls = element.querySelectorAll(FOCUSABLE_ELEMENT_SELECTORS);
+  let firstFocusableEl = focusableEls[0];
+  let lastFocusableEl = focusableEls[focusableEls.length - 1];
+
+  element.addEventListener('keydown', function(e) {
+    let isTabPressed = (e.code === "Tab");
+
+    if (!isTabPressed) {
+      return;
+    }
+
+    if ( e.shiftKey ) /* shift + tab */ {
+      if (document.activeElement === firstFocusableEl) {
+        lastFocusableEl.focus();
+          e.preventDefault();
+        }
+      } else /* tab */ {
+      if (document.activeElement === lastFocusableEl) {
+        firstFocusableEl.focus();
+          e.preventDefault();
+        }
+      }
+  });
+}
 
 btnOpenFeedback.addEventListener("click", function (evt) {
   evt.preventDefault();
   lastFocus = document.activeElement;
-  modalFeedback.classList.remove("modal__window--show");
+  modalFeedback.classList.remove("modal--show");
   modalFeedback.offsetWidth = modalFeedback.offsetWidth;
-  modalFeedback.classList.add("modal__window--show");
+  modalFeedback.classList.add("modal--show");
+  trapFocus(modalFeedback);
   inputName.focus();
 });
 
 btnOpenDesign.addEventListener("click", function (evt) {
   evt.preventDefault();
   lastFocus = document.activeElement;
-  modalFeedback.classList.remove("modal__window--show");
+  modalFeedback.classList.remove("modal--show");
   modalFeedback.offsetWidth = modalFeedback.offsetWidth;
-  modalFeedback.classList.add("modal__window--show");
+  modalFeedback.classList.add("modal--show");
+  trapFocus(modalFeedback);
   inputName.focus();
 });
 
@@ -94,15 +125,15 @@ inputPhone.addEventListener("input", validatePhone);
 
 btnCloseFeedback.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modalFeedback.classList.remove("modal__window--show");
+  modalFeedback.classList.remove("modal--show");
   lastFocus.focus();
 });
 
 // form.addEventListener("submit", function(evt) {
-//     modalSuccess.classList.remove("modal__window--show");
-//     modalFeedback.classList.remove("modal__window--show");
+//     modalSuccess.classList.remove("modal--show");
+//     modalFeedback.classList.remove("modal--show");
 //     modalSuccess.offsetWidth = modalSuccess.offsetWidth;
-//     modalSuccess.classList.add("modal__window--show");
+//     modalSuccess.classList.add("modal--show");
 // });
 
 function submitForm(evt) {
@@ -115,18 +146,18 @@ function submitForm(evt) {
   })
     .then(response => response.text())
     .then(result => {
-      modalFeedback.classList.remove("modal__window--show");
-      modalSuccess.classList.remove("modal__window--show");
+      modalFeedback.classList.remove("modal--show");
+      modalSuccess.classList.remove("modal--show");
       modalSuccess.offsetWidth = modalSuccess.offsetWidth;
-      modalSuccess.classList.add("modal__window--show");
+      modalSuccess.classList.add("modal--show");
       btnCloseSuccess.focus();
     })
     .catch(error => {
       console.error(error);
       // modalFeedback.classList.remove("modal--show");
-      modalFailure.classList.remove("modal__window--show");
+      modalFailure.classList.remove("modal--show");
       modalFailure.offsetWidth = modalFailure.offsetWidth;
-      modalFailure.classList.add("modal__window--show");
+      modalFailure.classList.add("modal--show");
       btnCloseFailure.focus();
     });
 }
@@ -135,31 +166,31 @@ form.addEventListener('submit', submitForm);
 
 btnCloseSuccess.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modalSuccess.classList.remove("modal__window--show");
+  modalSuccess.classList.remove("modal--show");
   lastFocus.focus();
 });
 
 btnCloseFailure.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modalFailure.classList.remove("modal__window--show");
+  modalFailure.classList.remove("modal--show");
   lastFocus.focus();
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.code === "Escape") {
-    if (modalFeedback.classList.contains("modal__window--show")) {
+    if (modalFeedback.classList.contains("modal--show")) {
       evt.preventDefault();
-      modalFeedback.classList.remove("modal__window--show");
+      modalFeedback.classList.remove("modal--show");
       lastFocus.focus();
     }
-    if (modalSuccess.classList.contains("modal__window--show")) {
+    if (modalSuccess.classList.contains("modal--show")) {
       evt.preventDefault();
-      modalSuccess.classList.remove("modal__window--show");
+      modalSuccess.classList.remove("modal--show");
       lastFocus.focus();
     }
-    if (modalFailure.classList.contains("modal__window--show")) {
+    if (modalFailure.classList.contains("modal--show")) {
       evt.preventDefault();
-      modalFailure.classList.remove("modal__window--show");
+      modalFailure.classList.remove("modal--show");
       lastFocus.focus();
     }
   }

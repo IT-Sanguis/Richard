@@ -7,9 +7,8 @@
   margin-bottom: 1.5vh;
 
   font-family: $font-family--title;
-  font-size: calc(var(--index) * 2.5);
-  // font-size: 4rem;
-  // font-size: 3.3vw;
+  font-size: calc(var(--font-fallback) * 2.5);
+  font-size: var(--font-size-xxl);
   line-height: 1.2;
   font-weight: 700;
   text-align: center;

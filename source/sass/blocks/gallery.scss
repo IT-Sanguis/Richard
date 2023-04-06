@@ -77,3 +77,29 @@
     opacity: 1;
   }
 }
+
+@media (max-width: $mobile-width--max) {
+  .gallery__slider--kitchen .gallery__img {
+    height: 50vh;
+    // object-position: center center;
+    // object-position: 50% 50%;
+    // object-position: 10% 30%;
+  }
+
+  .gallery__slider--cabinets .gallery__img {
+    height: 65vh;
+    // width: 300px;
+    // height: 500px;
+    // object-position: right bottom;
+    // object-position: 50% 50%;
+    // object-position: 10% 30%;
+  }
+
+  .gallery__slider--hallways .gallery__img {
+    height: 50vh;
+    // object-position: center 80%;
+    // object-position: 50% 50%;
+    // object-position: 10% 30%;
+  }
+
+}
