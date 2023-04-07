@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords"
-    content="кухонная мебель, мебель на заказ, мебель в Москве, Richard, изготовление мебели, продажа мебели, кухонные гарнитуры, мебель для кухни">
+    content="кухонная мебель, корпусная мебель, мебель на заказ, мебель в Москве, Richard, изготовление мебели, продажа мебели, кухонные гарнитуры, мебель для кухни">
   <meta name="description"
     content="Купите кухонную и корпусную мебель «Richard» в Москве от производителя с широким ассортиментом гарнитуров и аксессуаров на любой бюджет. От классики до современного дизайна. Быстрая доставка и монтаж. Закажите кухню прямо сейчас.">
   <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
@@ -47,20 +47,18 @@
     ::selection {
       color: #ffffff;
       background-color: rgba(255, 99, 71, 0.8);
-      /* background-color: #bd987b; */
     }
   </style>
 </head>
 
-<body>
+<body id="body">
   <div style="display:none">
     <include src="build/img/sprite/sprite.svg"></include>
   </div>
 
-  <!-- <header class="page-header js-nav" id="begin"> -->
   <header class="page-header">
     <div class="container page-header__wrapper">
-      <a class="page-header__logo logo" href="#">
+      <a class="page-header__logo logo" href="#body">
         <svg class="logo__img" role="img" width="100" height="70" aria-labelledby="logotype">
           <title id="logotype">Логотип «Richard»</title>
           <use xlink:href="#logo"></use>
@@ -78,7 +76,6 @@
             <a class="main-nav__link" href="#gallery">Наши работы</a>
           </li>
           <li class="main-nav__item">
-            <!-- <a class="main-nav__link" href="#services">Мы предоставляем</a> -->
             <a class="main-nav__link" href="#services">Этапы</a>
           </li>
           <li class="main-nav__item">
@@ -142,11 +139,7 @@
           <div class="gallery__slider gallery__slider--kitchen swiper">
             <div class="gallery__slider-wrapper swiper-wrapper">
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/1-desktop@1x.webp 1x, img/content/Kitchens/1-desktop@2x.webp 2x">
-                  <img class="gallery__img"  loading="lazy" src="img/content/Kitchens/1-desktop@1x.jpg" srcset="img/content/Kitchens/1-desktop@2x.jpg 2x" alt="Кухня 1">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/1-desktop@1x.jpg" alt="Кухня 1"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/1-desktop@1x.webp 1x, img/content/Kitchens/1-desktop@2x.webp 2x">
@@ -162,14 +155,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/1-mobile@1x.jpg"
                     srcset="img/content/Kitchens/1-mobile@2x.jpg 2x" alt="Кухня 1">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/2-desktop@1x.webp 1x, img/content/Kitchens/2-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/2-desktop@1x.jpg" srcset="img/content/Kitchens/2-desktop@2x.jpg 2x" alt="Кухня 2">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/2-desktop@1x.jpg" alt="Кухня 2"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/2-desktop@1x.webp 1x, img/content/Kitchens/2-desktop@2x.webp 2x">
@@ -185,14 +175,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/2-mobile@1x.jpg"
                     srcset="img/content/Kitchens/2-mobile@2x.jpg 2x" alt="Кухня 2">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/3-desktop@1x.webp 1x, img/content/Kitchens/3-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/3-desktop@1x.jpg" srcset="img/content/Kitchens/3-desktop@2x.jpg 2x" alt="Кухня 3">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/3-desktop@1x.jpg" alt="Кухня 3"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/3-desktop@1x.webp 1x, img/content/Kitchens/3-desktop@2x.webp 2x">
@@ -208,14 +195,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/3-mobile@1x.jpg"
                     srcset="img/content/Kitchens/3-mobile@2x.jpg 2x" alt="Кухня 3">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/4-desktop@1x.webp 1x, img/content/Kitchens/4-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/4-desktop@1x.jpg" srcset="img/content/Kitchens/4-desktop@2x.jpg 2x" alt="Кухня 4">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/4-desktop@1x.jpg" alt="Кухня 4"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/4-desktop@1x.webp 1x, img/content/Kitchens/4-desktop@2x.webp 2x">
@@ -231,14 +215,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/4-mobile@1x.jpg"
                     srcset="img/content/Kitchens/4-mobile@2x.jpg 2x" alt="Кухня 4">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/5-desktop@1x.webp 1x, img/content/Kitchens/5-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/5-desktop@1x.jpg" srcset="img/content/Kitchens/5-desktop@2x.jpg 2x" alt="Кухня 5">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/5-desktop@1x.jpg" alt="Кухня 5"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/5-desktop@1x.webp 1x, img/content/Kitchens/5-desktop@2x.webp 2x">
@@ -254,14 +235,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/5-mobile@1x.jpg"
                     srcset="img/content/Kitchens/5-mobile@2x.jpg 2x" alt="Кухня 5">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/6-desktop@1x.webp 1x, img/content/Kitchens/6-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/6-desktop@1x.jpg" srcset="img/content/Kitchens/6-desktop@2x.jpg 2x" alt="Кухня 6">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/6-desktop@1x.jpg" alt="Кухня 6"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/6-desktop@1x.webp 1x, img/content/Kitchens/6-desktop@2x.webp 2x">
@@ -277,14 +255,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/6-mobile@1x.jpg"
                     srcset="img/content/Kitchens/6-mobile@2x.jpg 2x" alt="Кухня 6">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/7-desktop@1x.webp 1x, img/content/Kitchens/7-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/7-desktop@1x.jpg" srcset="img/content/Kitchens/7-desktop@2x.jpg 2x" alt="Кухня 7">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/7-desktop@1x.jpg" alt="Кухня 7"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/7-desktop@1x.webp 1x, img/content/Kitchens/7-desktop@2x.webp 2x">
@@ -300,14 +275,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/7-mobile@1x.jpg"
                     srcset="img/content/Kitchens/7-mobile@2x.jpg 2x" alt="Кухня 7">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/8-desktop@1x.webp 1x, img/content/Kitchens/8-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/8-desktop@1x.jpg" srcset="img/content/Kitchens/8-desktop@2x.jpg 2x" alt="Кухня 8">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/8-desktop@1x.jpg" alt="Кухня 8"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/8-desktop@1x.webp 1x, img/content/Kitchens/8-desktop@2x.webp 2x">
@@ -326,11 +298,7 @@
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/9-desktop@1x.webp 1x, img/content/Kitchens/9-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/9-desktop@1x.jpg" srcset="img/content/Kitchens/9-desktop@2x.jpg 2x" alt="Кухня 9">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/9-desktop@1x.jpg" alt="Кухня 9"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/9-desktop@1x.webp 1x, img/content/Kitchens/9-desktop@2x.webp 2x">
@@ -346,14 +314,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/9-mobile@1x.jpg"
                     srcset="img/content/Kitchens/9-mobile@2x.jpg 2x" alt="Кухня 9">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/10-desktop@1x.webp 1x, img/content/Kitchens/10-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/10-desktop@1x.jpg" srcset="img/content/Kitchens/10-desktop@2x.jpg 2x" alt="Кухня 10">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/10-desktop@1x.jpg" alt="Кухня 10"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/10-desktop@1x.webp 1x, img/content/Kitchens/10-desktop@2x.webp 2x">
@@ -369,14 +334,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/10-mobile@1x.jpg"
                     srcset="img/content/Kitchens/10-mobile@2x.jpg 2x" alt="Кухня 10">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/11-desktop@1x.webp 1x, img/content/Kitchens/11-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/11-desktop@1x.jpg" srcset="img/content/Kitchens/11-desktop@2x.jpg 2x" alt="Кухня 11">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/11-desktop@1x.jpg" alt="Кухня 11"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/11-desktop@1x.webp 1x, img/content/Kitchens/11-desktop@2x.webp 2x">
@@ -392,14 +354,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/11-mobile@1x.jpg"
                     srcset="img/content/Kitchens/11-mobile@2x.jpg 2x" alt="Кухня 11">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/12-desktop@1x.webp 1x, img/content/Kitchens/12-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/12-desktop@1x.jpg" srcset="img/content/Kitchens/12-desktop@2x.jpg 2x" alt="Кухня 12">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/12-desktop@1x.jpg" alt="Кухня 12"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/12-desktop@1x.webp 1x, img/content/Kitchens/12-desktop@2x.webp 2x">
@@ -415,14 +374,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/12-mobile@1x.jpg"
                     srcset="img/content/Kitchens/12-mobile@2x.jpg 2x" alt="Кухня 12">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/13-desktop@1x.webp 1x, img/content/Kitchens/13-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/13-desktop@1x.jpg" srcset="img/content/Kitchens/13-desktop@2x.jpg 2x" alt="Кухня 13">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/13-desktop@1x.jpg" alt="Кухня 13"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/13-desktop@1x.webp 1x, img/content/Kitchens/13-desktop@2x.webp 2x">
@@ -438,14 +394,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/13-mobile@1x.jpg"
                     srcset="img/content/Kitchens/13-mobile@2x.jpg 2x" alt="Кухня 13">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/14-desktop@1x.webp 1x, img/content/Kitchens/14-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/14-desktop@1x.jpg" srcset="img/content/Kitchens/14-desktop@2x.jpg 2x" alt="Кухня 14">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/14-desktop@1x.jpg" alt="Кухня 14"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/14-desktop@1x.webp 1x, img/content/Kitchens/14-desktop@2x.webp 2x">
@@ -461,14 +414,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/14-mobile@1x.jpg"
                     srcset="img/content/Kitchens/14-mobile@2x.jpg 2x" alt="Кухня 14">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/15-desktop@1x.webp 1x, img/content/Kitchens/15-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/15-desktop@1x.jpg" srcset="img/content/Kitchens/15-desktop@2x.jpg 2x" alt="Кухня 15">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/15-desktop@1x.jpg" alt="Кухня 15"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/15-desktop@1x.webp 1x, img/content/Kitchens/15-desktop@2x.webp 2x">
@@ -484,14 +434,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/15-mobile@1x.jpg"
                     srcset="img/content/Kitchens/15-mobile@2x.jpg 2x" alt="Кухня 15">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/16-desktop@1x.webp 1x, img/content/Kitchens/16-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/16-desktop@1x.jpg" srcset="img/content/Kitchens/16-desktop@2x.jpg 2x" alt="Кухня 16">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/16-desktop@1x.jpg" alt="Кухня 16"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/16-desktop@1x.webp 1x, img/content/Kitchens/16-desktop@2x.webp 2x">
@@ -507,14 +454,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/16-mobile@1x.jpg"
                     srcset="img/content/Kitchens/16-mobile@2x.jpg 2x" alt="Кухня 16">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/17-desktop@1x.webp 1x, img/content/Kitchens/17-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/17-desktop@1x.jpg" srcset="img/content/Kitchens/17-desktop@2x.jpg 2x" alt="Кухня 17">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/17-desktop@1x.jpg" alt="Кухня 17"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/17-desktop@1x.webp 1x, img/content/Kitchens/17-desktop@2x.webp 2x">
@@ -530,14 +474,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/17-mobile@1x.jpg"
                     srcset="img/content/Kitchens/17-mobile@2x.jpg 2x" alt="Кухня 17">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Kitchens/18-desktop@1x.webp 1x, img/content/Kitchens/18-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/18-desktop@1x.jpg" srcset="img/content/Kitchens/18-desktop@2x.jpg 2x" alt="Кухня 18">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Kitchens/18-desktop@1x.jpg" alt="Кухня 18"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1410px)"
                     srcset="img/content/Kitchens/18-desktop@1x.webp 1x, img/content/Kitchens/18-desktop@2x.webp 2x">
@@ -553,6 +494,7 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Kitchens/18-mobile@1x.jpg"
                     srcset="img/content/Kitchens/18-mobile@2x.jpg 2x" alt="Кухня 18">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
             </div>
@@ -562,7 +504,6 @@
             <div class="gallery__btn swiper-button-prev"></div>
             <div class="gallery__btn swiper-button-next"></div>
 
-            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </section>
 
@@ -571,11 +512,7 @@
           <div class="gallery__slider gallery__slider--cabinets swiper">
             <div class="gallery__slider-wrapper swiper-wrapper">
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Cabinets/1-desktop@1x.webp 1x, img/content/Cabinets/1-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/1-desktop@1x.jpg" srcset="img/content/Cabinets/1-desktop@2x.jpg 2x" alt="Шкаф 1">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/1-desktop@1x.jpg" alt="Шкаф 1"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1900px)"
                     srcset="img/content/Cabinets/1-desktop@1x.webp 1x, img/content/Cabinets/1-desktop@2x.webp 2x">
@@ -591,14 +528,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Cabinets/1-mobile@1x.jpg"
                     srcset="img/content/Cabinets/1-mobile@2x.jpg 2x" alt="Шкаф 1">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Cabinets/2-desktop@1x.webp 1x, img/content/Cabinets/2-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/2-desktop@1x.jpg" srcset="img/content/Cabinets/2-desktop@2x.jpg 2x" alt="Шкаф 2">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/2-desktop@1x.jpg" alt="Шкаф 2"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1900px)"
                     srcset="img/content/Cabinets/2-desktop@1x.webp 1x, img/content/Cabinets/2-desktop@2x.webp 2x">
@@ -614,14 +548,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Cabinets/2-mobile@1x.jpg"
                     srcset="img/content/Cabinets/2-mobile@2x.jpg 2x" alt="Шкаф 2">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Cabinets/3-desktop@1x.webp 1x, img/content/Cabinets/3-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/3-desktop@1x.jpg" srcset="img/content/Cabinets/3-desktop@2x.jpg 2x" alt="Шкаф 3">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/3-desktop@1x.jpg" alt="Шкаф 3"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1900px)"
                     srcset="img/content/Cabinets/3-desktop@1x.webp 1x, img/content/Cabinets/3-desktop@2x.webp 2x">
@@ -637,14 +568,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Cabinets/3-mobile@1x.jpg"
                     srcset="img/content/Cabinets/3-mobile@2x.jpg 2x" alt="Шкаф 3">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Cabinets/4-desktop@1x.webp 1x, img/content/Cabinets/4-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/4-desktop@1x.jpg" srcset="img/content/Cabinets/4-desktop@2x.jpg 2x" alt="Шкаф 4">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/4-desktop@1x.jpg" alt="Шкаф 4"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1900px)"
                     srcset="img/content/Cabinets/4-desktop@1x.webp 1x, img/content/Cabinets/4-desktop@2x.webp 2x">
@@ -660,14 +588,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Cabinets/4-mobile@1x.jpg"
                     srcset="img/content/Cabinets/4-mobile@2x.jpg 2x" alt="Шкаф 4">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Cabinets/5-desktop@1x.webp 1x, img/content/Cabinets/5-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/5-desktop@1x.jpg" srcset="img/content/Cabinets/5-desktop@2x.jpg 2x" alt="Шкаф 5">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/5-desktop@1x.jpg" alt="Шкаф 5"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1900px)"
                     srcset="img/content/Cabinets/5-desktop@1x.webp 1x, img/content/Cabinets/5-desktop@2x.webp 2x">
@@ -683,14 +608,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Cabinets/5-mobile@1x.jpg"
                     srcset="img/content/Cabinets/5-mobile@2x.jpg 2x" alt="Шкаф 5">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Cabinets/6-desktop@1x.webp 1x, img/content/Cabinets/6-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/6-desktop@1x.jpg" srcset="img/content/Cabinets/6-desktop@2x.jpg 2x" alt="Шкаф 6">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/6-desktop@1x.jpg" alt="Шкаф 6"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1900px)"
                     srcset="img/content/Cabinets/6-desktop@1x.webp 1x, img/content/Cabinets/6-desktop@2x.webp 2x">
@@ -706,14 +628,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Cabinets/6-mobile@1x.jpg"
                     srcset="img/content/Cabinets/6-mobile@2x.jpg 2x" alt="Шкаф 6">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Cabinets/7-desktop@1x.webp 1x, img/content/Cabinets/7-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/7-desktop@1x.jpg" srcset="img/content/Cabinets/7-desktop@2x.jpg 2x" alt="Шкаф 7">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Cabinets/7-desktop@1x.jpg" alt="Шкаф 7"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 1900px)"
                     srcset="img/content/Cabinets/7-desktop@1x.webp 1x, img/content/Cabinets/7-desktop@2x.webp 2x">
@@ -729,6 +648,7 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Cabinets/7-mobile@1x.jpg"
                     srcset="img/content/Cabinets/7-mobile@2x.jpg 2x" alt="Шкаф 7">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
             </div>
@@ -737,8 +657,6 @@
 
             <div class="gallery__btn swiper-button-prev"></div>
             <div class="gallery__btn swiper-button-next"></div>
-
-            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
 
         </section>
@@ -747,11 +665,7 @@
           <div class="gallery__slider gallery__slider--hallways swiper">
             <div class="gallery__slider-wrapper swiper-wrapper">
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Hallways/1-desktop@1x.webp 1x, img/content/Hallways/1-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Hallways/1-desktop@1x.jpg" srcset="img/content/Hallways/1-desktop@2x.jpg 2x" alt="Прихожая 1">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Hallways/1-desktop@1x.jpg" alt="Прихожая 1"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 735px)"
                     srcset="img/content/Hallways/1-desktop@1x.webp 1x, img/content/Hallways/1-desktop@2x.webp 2x">
@@ -767,14 +681,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Hallways/1-mobile@1x.jpg"
                     srcset="img/content/Hallways/1-mobile@2x.jpg 2x" alt="Прихожая 1">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Hallways/2-desktop@1x.webp 1x, img/content/Hallways/2-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Hallways/2-desktop@1x.jpg" srcset="img/content/Hallways/2-desktop@2x.jpg 2x" alt="Прихожая 2">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Hallways/2-desktop@1x.jpg" alt="Прихожая 2"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 735px)"
                     srcset="img/content/Hallways/2-desktop@1x.webp 1x, img/content/Hallways/2-desktop@2x.webp 2x">
@@ -790,14 +701,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Hallways/2-mobile@1x.jpg"
                     srcset="img/content/Hallways/2-mobile@2x.jpg 2x" alt="Прихожая 2">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Dressers/1-desktop@1x.webp 1x, img/content/Dressers/1-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Dressers/1-desktop@1x.jpg" srcset="img/content/Dressers/1-desktop@2x.jpg 2x" alt="Комод 1">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Dressers/1-desktop@1x.jpg" alt="Комод 1"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 735px)"
                     srcset="img/content/Dressers/1-desktop@1x.webp 1x, img/content/Dressers/1-desktop@2x.webp 2x">
@@ -813,14 +721,11 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Dressers/1-mobile@1x.jpg"
                     srcset="img/content/Dressers/1-mobile@2x.jpg 2x" alt="Комод 1">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
               <div class="swiper-slide">
-                <!-- <picture>
-                  <source type="image/webp" srcset="img/content/Dressers/2-desktop@1x.webp 1x, img/content/Dressers/2-desktop@2x.webp 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Dressers/2-desktop@1x.jpg" srcset="img/content/Dressers/2-desktop@2x.jpg 2x" alt="Комод 2">
-                </picture> -->
-                <!-- <img class="gallery__img" width="300" height="250" src="img/content/Dressers/2-desktop@1x.jpg" alt="Комод 2"> -->
+
                 <picture>
                   <source type="image/webp" media="(min-width: 735px)"
                     srcset="img/content/Dressers/2-desktop@1x.webp 1x, img/content/Dressers/2-desktop@2x.webp 2x">
@@ -836,6 +741,7 @@
                   <img class="gallery__img" loading="lazy" src="img/content/Dressers/2-mobile@1x.jpg"
                     srcset="img/content/Dressers/2-mobile@2x.jpg 2x" alt="Комод 2">
                 </picture>
+
                 <div class="swiper-lazy-preloader"></div>
               </div>
             </div>
@@ -844,8 +750,6 @@
 
             <div class="gallery__btn swiper-button-prev"></div>
             <div class="gallery__btn swiper-button-next"></div>
-
-            <!-- <div class="swiper-scrollbar"></div> -->
           </div>
         </section>
       </div>
@@ -948,7 +852,7 @@
 
   <footer class="page-footer">
     <div class="container page-footer__wrapper">
-      <a class="page-footer__logo logo" href="#">
+      <a class="page-footer__logo logo" href="#body">
         <svg class="logo__img logo__img--footer" role="img" width="100" height="70" aria-labelledby="logotype-footer">
           <title id="logotype-footer">Логотип «Richard»</title>
           <use xlink:href="#logo"></use>
@@ -966,7 +870,6 @@
             <a class="footer-nav__link" href="#gallery">Наши работы</a>
           </li>
           <li class="footer-nav__item">
-            <!-- <a class="footer-nav__link" href="#services">Мы предоставляем</a> -->
             <a class="footer-nav__link" href="#services">Этапы</a>
           </li>
           <li class="footer-nav__item">
@@ -1053,9 +956,6 @@
   </section>
 
   <script src="libs/swiper-bundle.min.js"></script>
-  <!-- <script src="js/index.min.js"></script> -->
-  <!-- <script src="js/slider.min.js"></script> -->
-  <!-- <script src="js/modal.min.js"></script> -->
   <script src="js/main.min.js"></script>
 </body>
 

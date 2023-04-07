@@ -4,7 +4,6 @@
   min-height: 100vh;
 
   background-color: $color-bg--secondary;
-  // background-image: url("../img/bg-intro-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -42,7 +41,7 @@
   margin: 0 auto;
   padding: 15px;
 
-  background-color: $color-bg--dark-70;
+  background-color: rgba($color--black, 0.7);
 }
 
 

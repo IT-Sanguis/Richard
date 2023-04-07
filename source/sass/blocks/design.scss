@@ -10,7 +10,6 @@
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
   background-repeat: no-repeat;
   background-position: center;
-  // background-attachment: fixed;
 }
 
 .design__wrapper {
@@ -21,7 +20,7 @@
   // text-align: center;
 
   background-color: $color-bg--light-50;
-  box-shadow: 0 4px 24px 1px $color-bg--dark-30;
+  box-shadow: 0 4px 24px 1px rgba($color--black, 0.3);
 }
 
 
@@ -50,13 +49,13 @@
   border-radius: 50px;
   border: 1px solid $color-btn--accent;
 
-  box-shadow: 0 2px 10px 0 $color-bg--dark-30;
+  box-shadow: 0 2px 10px 0 rgba($color--black, 0.3);
 
 
   &:hover {
     color: $color-btn--accent;
 
-    background-color: $color--light;
+    background-color: $color--white;
 
     border: 1px solid $color-btn--accent;
   }

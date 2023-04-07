@@ -22,7 +22,7 @@
 
     background-color: $color-bg--primary;
 
-    box-shadow: 0 0 20px 5px $color-bg--dark-50;
+    box-shadow: 0 0 20px 5px rgba($color--black, 0.5);
   }
 
   &--failure {
@@ -32,7 +32,7 @@
 
     background-color: $color-bg--primary;
 
-    box-shadow: 0 0 20px 5px $color-bg--dark-50;
+    box-shadow: 0 0 20px 5px rgba($color--black, 0.5);
 
     .modal__btn-wrapper {
       padding: 25px 20px;
