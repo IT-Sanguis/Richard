@@ -37,12 +37,20 @@
 // .page-header__main-nav {
 // }
 
-.page-header__phone {
+.page-header__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.page-header__phone,
+.page-header__mail {
   display: flex;
   align-items: center;
 
   // padding-left: 20px;
 
+  column-gap: 5px;
   color: $color-btn--accent;
 
   &:hover {
@@ -192,6 +200,10 @@
 }
 
 @media (max-width: 380px) {
+  .page-header__mail {
+    display: none;
+  }
+
   .page-header__phone {
     position: absolute;
     top: 95%;

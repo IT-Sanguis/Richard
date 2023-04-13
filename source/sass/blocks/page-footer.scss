@@ -45,6 +45,37 @@
   justify-content: space-around;
 }
 
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
+}
+
+.page-footer__mail,
+.page-footer__phone {
+  display: flex;
+  align-items: center;
+
+  // padding-left: 20px;
+
+  column-gap: 5px;
+  color: $color--logo;
+
+  span {
+    color: $color--primary;
+  }
+
+  &:hover span {
+    color: $color-btn--accent;
+  }
+
+  &:active span {
+    opacity: 0.6;
+  }
+}
+
 .page-footer__address {
   @include reset;
   position: relative;
@@ -52,8 +83,8 @@
 
   // margin-bottom: 10px;
 
-  font-size: 1rem;
-  font-size: var(--font-size-base);
+  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
 
   &::before {
     content: "";
@@ -61,12 +92,12 @@
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 30px;
+    width: 16px;
+    height: 25px;
 
     background-image: url("../img/icon-pin.svg");
     background-repeat: no-repeat;
-    background-size: 20px;
+    background-size: 15px;
   }
 }
 
@@ -78,8 +109,8 @@
 .page-footer__policy {
   @include reset;
 
-  font-size: 1rem;
-  font-size: var(--font-size-base);
+  font-size: 0.8rem;
+  font-size: var(--font-size-sm);
 
   color: inherit;
 

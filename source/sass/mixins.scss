@@ -22,14 +22,14 @@
     width: 0;
     height: 2px;
 
-    background-color: $color--accent;
+    background-color: $color--primary;
 
     transition: background 0.5s, width 0.5s, left 0.5s;
   }
 
 
   &:hover {
-    color: $color--accent;
+    color: $color--primary;
 
     transition: color 0.5s;
 
