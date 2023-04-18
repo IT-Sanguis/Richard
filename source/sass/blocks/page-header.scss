@@ -191,6 +191,60 @@
       }
     }
   }
+
+  .no-js {
+    .page-header {
+      position: relative;
+
+      padding-bottom: 15px;
+    }
+
+    .page-header__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-header__burger {
+      display: none;
+    }
+
+    .page-header__contacts {
+      display: flex;
+      align-items: center;
+
+      width: 100%;
+    }
+
+    .page-header__phone {
+      position: static;
+
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+
+      // width: 100%;
+
+      color: $color--accent;
+
+      background-color: transparent;
+
+      border: none;
+
+      transform: translate(0);
+
+      &::before {
+        content: none;
+      }
+    }
+
+    .page-header__mail {
+      display: block;
+    }
+
+    .page-header__phone-btn {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: $mobile-width--max) {
@@ -255,12 +309,5 @@
     &:hover {
       color: $color-btn--accent-80;
     }
-  }
-}
-
-
-.no-js {
-  .page-header__burger {
-    display: none;
   }
 }

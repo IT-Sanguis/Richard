@@ -68,7 +68,37 @@
       }
     }
   }
+
+  .no-js {
+    .main-nav {
+      position: static;
+
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+      padding: 10px;
+
+      // background-color: $color-bg--tertiary;
+
+      // box-shadow: 0 9px 10px -5px $color-bg--dark-50;
+    }
+
+    .main-nav__list {
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+
+    .main-nav__item {
+      margin: 10px;
+
+      &--main {
+        display: block;
+      }
+    }
+  }
 }
+
 
 // @keyframes fadein {
 //   0% {transform: translateY(-2000px);}

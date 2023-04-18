@@ -30,6 +30,7 @@ $color--primary-80: rgba($color--primary, 0.8);
 
 $color-bg--light: $color--light;
 $color-bg--light-50: rgba($color--light, 0.5);
+$color-bg--light-80: rgba($color--light, 0.8);
 $color-bg--dark: $color--dark;
 $color-bg--dark-10: rgba($color--dark, 0.1);
 $color-bg--dark-30: rgba($color--dark, 0.3);
@@ -53,13 +54,14 @@ $color-btn--light-70: rgba($color--light, 0.7);
 $color-btn--light-80: rgba($color--light, 0.8);
 $color-btn--primary: $color--logo;
 $color-btn--accent: $color--accent;
+$color-btn--accent-10: rgba($color-btn--accent, 0.1);
 $color-btn--accent-50: rgba($color-btn--accent, 0.5);
 $color-btn--accent-80: rgba($color-btn--accent, 0.8);
 
 
 :root {
   --font-size-xs: clamp(0.63rem, calc(0.64rem + -0.01vw), 0.64rem);
-  --font-size-sm: clamp(0.80rem, calc(0.78rem + 0.08vw), 0.84rem);
+  --font-size-sm: clamp(0.8rem, calc(0.78rem + 0.08vw), 0.84rem);
   --font-size-base: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
   --font-size-md: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
   --font-size-lg: clamp(1.56rem, calc(1.41rem + 0.76vw), 2rem);

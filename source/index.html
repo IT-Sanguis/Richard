@@ -10,8 +10,9 @@
     content="кухонная мебель, корпусная мебель, мебель на заказ, мебель в Москве, Richard, изготовление мебели, продажа мебели, кухонные гарнитуры, мебель для кухни">
   <meta name="description"
     content="Купите кухонную и корпусную мебель «Richard» в Москве от производителя с широким ассортиментом гарнитуров и аксессуаров на любой бюджет. От классики до современного дизайна. Быстрая доставка и монтаж. Закажите кухню прямо сейчас.">
-  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/OpenSans-Bold-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Caveat-Bold-subset.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -27,7 +28,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 -->
-  <script src="libs/modernizr-custom.js"></script>
 
   <link rel="stylesheet" type="text/css" href="libs/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -76,10 +76,10 @@
             <a class="main-nav__link" href="#gallery">Наши работы</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#services">Услуги</a>
+            <a class="main-nav__link" href="#design">Этапы</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#design">Этапы</a>
+            <a class="main-nav__link" href="#services">Услуги</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#partners">Партнёрам</a>
@@ -125,14 +125,14 @@
         <h2 class="about__title title">О нас</h2>
         <p class="about__desc">Мебельная фабрика &laquo;Richard&raquo; является прямым производителем кухонных
           гарнитуров и&nbsp;корпусной мебели.</p>
-        <p class="about__desc">Фабрика работает с&nbsp;2008&nbsp;года, и&nbsp;уже зарекомендовала себя на&nbsp;рынке как
+        <p class="about__desc">Фабрика работает с&nbsp;2018&nbsp;года, и&nbsp;уже зарекомендовала себя на&nbsp;рынке как
           надёжного производителя. Мы&nbsp;работаем как с&nbsp;оптовыми, так и&nbsp;с&nbsp;розничными клиентами.</p>
         <p class="about__desc">Главная задача нашей фабрики&nbsp;&mdash; человеческое отношение ко&nbsp;всем клиентам.
           Мы&nbsp;всегда будем рады проконсультировать вас и&nbsp;помочь с&nbsp;выбором мебели и&nbsp;техники.</p>
         <p class="about__desc">У&nbsp;нас работают одни из&nbsp;лучших дизайнеров-замерщиков, которые прошли
           двухмесячное обучение. Наши замеры и&nbsp;консультации бесплатны. Мы&nbsp;поможем вам с&nbsp;выбором
           модулей, цвета и&nbsp;даже кухонной техники.</p>
-        <p class="about__desc">Мы&nbsp;работаем по&nbsp;Москве и&nbsp;Московской области.</p>
+        <p class="about__desc about__desc--location">Мы&nbsp;работаем по&nbsp;Москве и&nbsp;Московской области.</p>
       </div>
     </section>
 
@@ -144,365 +144,265 @@
           <h3 class="visually-hidden">Кухни</h3>
           <div class="gallery__slider gallery__slider--kitchen swiper">
             <div class="gallery__slider-wrapper swiper-wrapper">
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/1-desktop@1x.webp 1x, img/content/Kitchens/1-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/1-tablet@1x.webp 1x, img/content/Kitchens/1-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/1-mobile@1x.webp 1x, img/content/Kitchens/1-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/1-desktop@1x.jpg 1x, img/content/Kitchens/1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/1-tablet@1x.jpg 1x, img/content/Kitchens/1-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/1-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/1-mobile@2x.jpg 2x" alt="Кухня 1">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/3-desktop@1x.webp 1x, img/content/Kitchens/3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/3-tablet@1x.webp 1x, img/content/Kitchens/3-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/3-mobile@1x.webp 1x, img/content/Kitchens/3-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/3-desktop@1x.jpg 1x, img/content/Kitchens/3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/3-tablet@1x.jpg 1x, img/content/Kitchens/3-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/3-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/3-mobile@2x.jpg 2x"
+                      alt="Белая кухня, выполненная в классическом стиле с фрезеровкой. Корпус - ЛДСП, фасады - МДФ плёнка.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">114000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 57000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/2-desktop@1x.webp 1x, img/content/Kitchens/2-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/2-tablet@1x.webp 1x, img/content/Kitchens/2-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/2-mobile@1x.webp 1x, img/content/Kitchens/2-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/2-desktop@1x.jpg 1x, img/content/Kitchens/2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/2-tablet@1x.jpg 1x, img/content/Kitchens/2-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/2-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/2-mobile@2x.jpg 2x" alt="Кухня 2">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/4-desktop@1x.webp 1x, img/content/Kitchens/4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/4-tablet@1x.webp 1x, img/content/Kitchens/4-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/4-mobile@1x.webp 1x, img/content/Kitchens/4-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/4-desktop@1x.jpg 1x, img/content/Kitchens/4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/4-tablet@1x.jpg 1x, img/content/Kitchens/4-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/4-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/4-mobile@2x.jpg 2x"
+                      alt="Белая кухня в современном стиле. Контраст составляет черная столешница и стеновая панель.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">96800&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 48400&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/3-desktop@1x.webp 1x, img/content/Kitchens/3-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/3-tablet@1x.webp 1x, img/content/Kitchens/3-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/3-mobile@1x.webp 1x, img/content/Kitchens/3-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/3-desktop@1x.jpg 1x, img/content/Kitchens/3-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/3-tablet@1x.jpg 1x, img/content/Kitchens/3-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/3-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/3-mobile@2x.jpg 2x" alt="Кухня 3">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/11-desktop@1x.webp 1x, img/content/Kitchens/11-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/11-tablet@1x.webp 1x, img/content/Kitchens/11-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/11-mobile@1x.webp 1x, img/content/Kitchens/11-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/11-desktop@1x.jpg 1x, img/content/Kitchens/11-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/11-tablet@1x.jpg 1x, img/content/Kitchens/11-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/11-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/11-mobile@2x.jpg 2x"
+                      alt="Кухня в эмали с тонированным стеклом. Вся фурнитура с доводчиками.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">134000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 67000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/4-desktop@1x.webp 1x, img/content/Kitchens/4-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/4-tablet@1x.webp 1x, img/content/Kitchens/4-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/4-mobile@1x.webp 1x, img/content/Kitchens/4-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/4-desktop@1x.jpg 1x, img/content/Kitchens/4-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/4-tablet@1x.jpg 1x, img/content/Kitchens/4-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/4-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/4-mobile@2x.jpg 2x" alt="Кухня 4">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/12-desktop@1x.webp 1x, img/content/Kitchens/12-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/12-tablet@1x.webp 1x, img/content/Kitchens/12-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/12-mobile@1x.webp 1x, img/content/Kitchens/12-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/12-desktop@1x.jpg 1x, img/content/Kitchens/12-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/12-tablet@1x.jpg 1x, img/content/Kitchens/12-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/12-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/12-mobile@2x.jpg 2x"
+                      alt="Белая кухня в современном стиле. Контраст составляет черная столешница и стеновая панель.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">94000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 47000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/5-desktop@1x.webp 1x, img/content/Kitchens/5-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/5-tablet@1x.webp 1x, img/content/Kitchens/5-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/5-mobile@1x.webp 1x, img/content/Kitchens/5-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/5-desktop@1x.jpg 1x, img/content/Kitchens/5-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/5-tablet@1x.jpg 1x, img/content/Kitchens/5-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/5-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/5-mobile@2x.jpg 2x" alt="Кухня 5">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/13-desktop@1x.webp 1x, img/content/Kitchens/13-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/13-tablet@1x.webp 1x, img/content/Kitchens/13-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/13-mobile@1x.webp 1x, img/content/Kitchens/13-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/13-desktop@1x.jpg 1x, img/content/Kitchens/13-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/13-tablet@1x.jpg 1x, img/content/Kitchens/13-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/13-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/13-mobile@2x.jpg 2x" alt="Современная кухня в цвете капучино.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">86600&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 43300&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/6-desktop@1x.webp 1x, img/content/Kitchens/6-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/6-tablet@1x.webp 1x, img/content/Kitchens/6-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/6-mobile@1x.webp 1x, img/content/Kitchens/6-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/6-desktop@1x.jpg 1x, img/content/Kitchens/6-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/6-tablet@1x.jpg 1x, img/content/Kitchens/6-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/6-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/6-mobile@2x.jpg 2x" alt="Кухня 6">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/18-desktop@1x.webp 1x, img/content/Kitchens/18-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/18-tablet@1x.webp 1x, img/content/Kitchens/18-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/18-mobile@1x.webp 1x, img/content/Kitchens/18-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/18-desktop@1x.jpg 1x, img/content/Kitchens/18-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/18-tablet@1x.jpg 1x, img/content/Kitchens/18-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/18-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/18-mobile@2x.jpg 2x"
+                      alt="Кухня в фасаде МДФ. Сочетание древесной текстуры с цветом-бетон.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">126000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 63000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/7-desktop@1x.webp 1x, img/content/Kitchens/7-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/7-tablet@1x.webp 1x, img/content/Kitchens/7-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/7-mobile@1x.webp 1x, img/content/Kitchens/7-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/7-desktop@1x.jpg 1x, img/content/Kitchens/7-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/7-tablet@1x.jpg 1x, img/content/Kitchens/7-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/7-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/7-mobile@2x.jpg 2x" alt="Кухня 7">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/27-desktop@1x.webp 1x, img/content/Kitchens/27-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/27-tablet@1x.webp 1x, img/content/Kitchens/27-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/27-mobile@1x.webp 1x, img/content/Kitchens/27-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/27-desktop@1x.jpg 1x, img/content/Kitchens/27-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/27-tablet@1x.jpg 1x, img/content/Kitchens/27-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/27-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/27-mobile@2x.jpg 2x"
+                      alt="Кухня в классическом стиле с добавлением багета с классической текстурой.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">85400&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 42700&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/8-desktop@1x.webp 1x, img/content/Kitchens/8-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/8-tablet@1x.webp 1x, img/content/Kitchens/8-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/8-mobile@1x.webp 1x, img/content/Kitchens/8-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/8-desktop@1x.jpg 1x, img/content/Kitchens/8-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/8-tablet@1x.jpg 1x, img/content/Kitchens/8-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/8-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/8-mobile@2x.jpg 2x" alt="Кухня 8">
-                </picture>
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/28-desktop@1x.webp 1x, img/content/Kitchens/28-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/28-tablet@1x.webp 1x, img/content/Kitchens/28-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/28-mobile@1x.webp 1x, img/content/Kitchens/28-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/28-desktop@1x.jpg 1x, img/content/Kitchens/28-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/28-tablet@1x.jpg 1x, img/content/Kitchens/28-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/28-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/28-mobile@2x.jpg 2x"
+                      alt="Кухня в фасаде МДФ. Сочетание древесной текстуры с цветом-бетон.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">95600&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 47800&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/9-desktop@1x.webp 1x, img/content/Kitchens/9-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/9-tablet@1x.webp 1x, img/content/Kitchens/9-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/9-mobile@1x.webp 1x, img/content/Kitchens/9-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/9-desktop@1x.jpg 1x, img/content/Kitchens/9-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/9-tablet@1x.jpg 1x, img/content/Kitchens/9-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/9-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/9-mobile@2x.jpg 2x" alt="Кухня 9">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/35-desktop@1x.webp 1x, img/content/Kitchens/35-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/35-tablet@1x.webp 1x, img/content/Kitchens/35-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/35-mobile@1x.webp 1x, img/content/Kitchens/35-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/35-desktop@1x.jpg 1x, img/content/Kitchens/35-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/35-tablet@1x.jpg 1x, img/content/Kitchens/35-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/35-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/35-mobile@2x.jpg 2x"
+                      alt="Кухня в эмали. Добавлен кухонный островок.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">106800&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 53400&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/10-desktop@1x.webp 1x, img/content/Kitchens/10-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/10-tablet@1x.webp 1x, img/content/Kitchens/10-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/10-mobile@1x.webp 1x, img/content/Kitchens/10-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/10-desktop@1x.jpg 1x, img/content/Kitchens/10-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/10-tablet@1x.jpg 1x, img/content/Kitchens/10-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/10-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/10-mobile@2x.jpg 2x" alt="Кухня 10">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/39-desktop@1x.webp 1x, img/content/Kitchens/39-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/39-tablet@1x.webp 1x, img/content/Kitchens/39-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Kitchens/39-mobile@1x.webp 1x, img/content/Kitchens/39-mobile@2x.webp 2x">
+                    <source media="(min-width: 1410px)"
+                      srcset="img/content/Kitchens/39-desktop@1x.jpg 1x, img/content/Kitchens/39-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Kitchens/39-tablet@1x.jpg 1x, img/content/Kitchens/39-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Kitchens/39-mobile@1x.jpg"
+                      srcset="img/content/Kitchens/39-mobile@2x.jpg 2x" alt="Кухня в воздушно-светлом тоне.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">91400&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 45700&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/11-desktop@1x.webp 1x, img/content/Kitchens/11-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/11-tablet@1x.webp 1x, img/content/Kitchens/11-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/11-mobile@1x.webp 1x, img/content/Kitchens/11-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/11-desktop@1x.jpg 1x, img/content/Kitchens/11-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/11-tablet@1x.jpg 1x, img/content/Kitchens/11-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/11-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/11-mobile@2x.jpg 2x" alt="Кухня 11">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/12-desktop@1x.webp 1x, img/content/Kitchens/12-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/12-tablet@1x.webp 1x, img/content/Kitchens/12-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/12-mobile@1x.webp 1x, img/content/Kitchens/12-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/12-desktop@1x.jpg 1x, img/content/Kitchens/12-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/12-tablet@1x.jpg 1x, img/content/Kitchens/12-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/12-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/12-mobile@2x.jpg 2x" alt="Кухня 12">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/13-desktop@1x.webp 1x, img/content/Kitchens/13-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/13-tablet@1x.webp 1x, img/content/Kitchens/13-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/13-mobile@1x.webp 1x, img/content/Kitchens/13-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/13-desktop@1x.jpg 1x, img/content/Kitchens/13-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/13-tablet@1x.jpg 1x, img/content/Kitchens/13-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/13-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/13-mobile@2x.jpg 2x" alt="Кухня 13">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/14-desktop@1x.webp 1x, img/content/Kitchens/14-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/14-tablet@1x.webp 1x, img/content/Kitchens/14-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/14-mobile@1x.webp 1x, img/content/Kitchens/14-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/14-desktop@1x.jpg 1x, img/content/Kitchens/14-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/14-tablet@1x.jpg 1x, img/content/Kitchens/14-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/14-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/14-mobile@2x.jpg 2x" alt="Кухня 14">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/15-desktop@1x.webp 1x, img/content/Kitchens/15-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/15-tablet@1x.webp 1x, img/content/Kitchens/15-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/15-mobile@1x.webp 1x, img/content/Kitchens/15-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/15-desktop@1x.jpg 1x, img/content/Kitchens/15-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/15-tablet@1x.jpg 1x, img/content/Kitchens/15-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/15-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/15-mobile@2x.jpg 2x" alt="Кухня 15">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/16-desktop@1x.webp 1x, img/content/Kitchens/16-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/16-tablet@1x.webp 1x, img/content/Kitchens/16-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/16-mobile@1x.webp 1x, img/content/Kitchens/16-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/16-desktop@1x.jpg 1x, img/content/Kitchens/16-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/16-tablet@1x.jpg 1x, img/content/Kitchens/16-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/16-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/16-mobile@2x.jpg 2x" alt="Кухня 16">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/17-desktop@1x.webp 1x, img/content/Kitchens/17-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/17-tablet@1x.webp 1x, img/content/Kitchens/17-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/17-mobile@1x.webp 1x, img/content/Kitchens/17-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/17-desktop@1x.jpg 1x, img/content/Kitchens/17-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/17-tablet@1x.jpg 1x, img/content/Kitchens/17-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/17-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/17-mobile@2x.jpg 2x" alt="Кухня 17">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/18-desktop@1x.webp 1x, img/content/Kitchens/18-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/18-tablet@1x.webp 1x, img/content/Kitchens/18-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Kitchens/18-mobile@1x.webp 1x, img/content/Kitchens/18-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1410px)"
-                    srcset="img/content/Kitchens/18-desktop@1x.jpg 1x, img/content/Kitchens/18-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Kitchens/18-tablet@1x.jpg 1x, img/content/Kitchens/18-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Kitchens/18-mobile@1x.jpg"
-                    srcset="img/content/Kitchens/18-mobile@2x.jpg 2x" alt="Кухня 18">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
             </div>
 
             <div class="swiper-pagination"></div>
@@ -517,189 +417,288 @@
           <h3 class="visually-hidden">Шкафы</h3>
           <div class="gallery__slider gallery__slider--cabinets swiper">
             <div class="gallery__slider-wrapper swiper-wrapper">
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/1-desktop@1x.webp 1x, img/content/Cabinets/1-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/1-tablet@1x.webp 1x, img/content/Cabinets/1-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Cabinets/1-mobile@1x.webp 1x, img/content/Cabinets/1-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/1-desktop@1x.jpg 1x, img/content/Cabinets/1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/1-tablet@1x.jpg 1x, img/content/Cabinets/1-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/1-mobile@1x.jpg"
-                    srcset="img/content/Cabinets/1-mobile@2x.jpg 2x" alt="Шкаф 1">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/2-desktop@1x.webp 1x, img/content/Cabinets/2-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/2-tablet@1x.webp 1x, img/content/Cabinets/2-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Cabinets/2-mobile@1x.webp 1x, img/content/Cabinets/2-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/2-desktop@1x.jpg 1x, img/content/Cabinets/2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/2-tablet@1x.jpg 1x, img/content/Cabinets/2-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/2-mobile@1x.jpg"
-                    srcset="img/content/Cabinets/2-mobile@2x.jpg 2x" alt="Шкаф 2">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/3-desktop@1x.webp 1x, img/content/Cabinets/3-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/3-tablet@1x.webp 1x, img/content/Cabinets/3-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Cabinets/3-mobile@1x.webp 1x, img/content/Cabinets/3-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/3-desktop@1x.jpg 1x, img/content/Cabinets/3-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/3-tablet@1x.jpg 1x, img/content/Cabinets/3-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/3-mobile@1x.jpg"
-                    srcset="img/content/Cabinets/3-mobile@2x.jpg 2x" alt="Шкаф 3">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/4-desktop@1x.webp 1x, img/content/Cabinets/4-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/4-tablet@1x.webp 1x, img/content/Cabinets/4-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Cabinets/4-mobile@1x.webp 1x, img/content/Cabinets/4-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/4-desktop@1x.jpg 1x, img/content/Cabinets/4-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/4-tablet@1x.jpg 1x, img/content/Cabinets/4-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/4-mobile@1x.jpg"
-                    srcset="img/content/Cabinets/4-mobile@2x.jpg 2x" alt="Шкаф 4">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/5-desktop@1x.webp 1x, img/content/Cabinets/5-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/5-tablet@1x.webp 1x, img/content/Cabinets/5-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Cabinets/5-mobile@1x.webp 1x, img/content/Cabinets/5-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/5-desktop@1x.jpg 1x, img/content/Cabinets/5-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/5-tablet@1x.jpg 1x, img/content/Cabinets/5-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/5-mobile@1x.jpg"
-                    srcset="img/content/Cabinets/5-mobile@2x.jpg 2x" alt="Шкаф 5">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/6-desktop@1x.webp 1x, img/content/Cabinets/6-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/6-tablet@1x.webp 1x, img/content/Cabinets/6-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Cabinets/6-mobile@1x.webp 1x, img/content/Cabinets/6-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/6-desktop@1x.jpg 1x, img/content/Cabinets/6-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/6-tablet@1x.jpg 1x, img/content/Cabinets/6-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/6-mobile@1x.jpg"
-                    srcset="img/content/Cabinets/6-mobile@2x.jpg 2x" alt="Шкаф 6">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
-              </div>
-              <div class="swiper-slide">
-
-                <picture>
-                  <source type="image/webp" media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/7-desktop@1x.webp 1x, img/content/Cabinets/7-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/7-tablet@1x.webp 1x, img/content/Cabinets/7-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Cabinets/7-mobile@1x.webp 1x, img/content/Cabinets/7-mobile@2x.webp 2x">
-
-                  <source media="(min-width: 1900px)"
-                    srcset="img/content/Cabinets/7-desktop@1x.jpg 1x, img/content/Cabinets/7-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Cabinets/7-tablet@1x.jpg 1x, img/content/Cabinets/7-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Cabinets/7-mobile@1x.jpg"
-                    srcset="img/content/Cabinets/7-mobile@2x.jpg 2x" alt="Шкаф 7">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/1-desktop@1x.webp 1x, img/content/Cabinets/1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/1-tablet@1x.webp 1x, img/content/Cabinets/1-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/1-mobile@1x.webp 1x, img/content/Cabinets/1-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/1-desktop@1x.jpg 1x, img/content/Cabinets/1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/1-tablet@1x.jpg 1x, img/content/Cabinets/1-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/1-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/1-mobile@2x.jpg 2x"
+                      alt="Шкаф-купе. Сочетание белого цвета с яркими для детской.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">36000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 18000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
 
-            <div class="swiper-slide">
+              <div class="swiper-slide gallery__slide">
 
-              <picture>
-                <source type="image/webp" media="(min-width: 1900px)"
-                  srcset="img/content/Cabinets/8-desktop@1x.webp 1x, img/content/Cabinets/8-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 340px)"
-                  srcset="img/content/Cabinets/8-tablet@1x.webp 1x, img/content/Cabinets/8-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="img/content/Cabinets/8-mobile@1x.webp 1x, img/content/Cabinets/8-mobile@2x.webp 2x">
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/2-desktop@1x.webp 1x, img/content/Cabinets/2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/2-tablet@1x.webp 1x, img/content/Cabinets/2-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/2-mobile@1x.webp 1x, img/content/Cabinets/2-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/2-desktop@1x.jpg 1x, img/content/Cabinets/2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/2-tablet@1x.jpg 1x, img/content/Cabinets/2-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/2-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/2-mobile@2x.jpg 2x" alt="Шкаф-купе с затемнённым стеклом.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">46000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 23000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
 
-                <source media="(min-width: 1900px)"
-                  srcset="img/content/Cabinets/8-desktop@1x.jpg 1x, img/content/Cabinets/8-desktop@2x.jpg 2x">
-                <source media="(min-width: 340px)"
-                  srcset="img/content/Cabinets/8-tablet@1x.jpg 1x, img/content/Cabinets/8-tablet@2x.jpg 2x">
-                <img class="gallery__img" loading="lazy" src="img/content/Cabinets/8-mobile@1x.jpg"
-                  srcset="img/content/Cabinets/7-mobile@2x.jpg 2x" alt="Шкаф 8">
-              </picture>
+              <div class="swiper-slide gallery__slide">
 
-              <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/3-desktop@1x.webp 1x, img/content/Cabinets/3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/3-tablet@1x.webp 1x, img/content/Cabinets/3-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/3-mobile@1x.webp 1x, img/content/Cabinets/3-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/3-desktop@1x.jpg 1x, img/content/Cabinets/3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/3-tablet@1x.jpg 1x, img/content/Cabinets/3-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/3-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/3-mobile@2x.jpg 2x"
+                      alt="Шкаф-купе. Сочетание белого цвета с яркими для детской.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">36000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 18000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
+
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/4-desktop@1x.webp 1x, img/content/Cabinets/4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/4-tablet@1x.webp 1x, img/content/Cabinets/4-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/4-mobile@1x.webp 1x, img/content/Cabinets/4-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/4-desktop@1x.jpg 1x, img/content/Cabinets/4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/4-tablet@1x.jpg 1x, img/content/Cabinets/4-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/4-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/4-mobile@2x.jpg 2x" alt="Белый распашной шкаф с доводчиками.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">35600&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 17800&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
+
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/5-desktop@1x.webp 1x, img/content/Cabinets/5-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/5-tablet@1x.webp 1x, img/content/Cabinets/5-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/5-mobile@1x.webp 1x, img/content/Cabinets/5-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/5-desktop@1x.jpg 1x, img/content/Cabinets/5-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/5-tablet@1x.jpg 1x, img/content/Cabinets/5-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/5-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/5-mobile@2x.jpg 2x"
+                      alt="Современный распашной шкаф с открытой нишей. Сочетание дерева с бетонным цветом.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">24000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 12000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
+
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/6-desktop@1x.webp 1x, img/content/Cabinets/6-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/6-tablet@1x.webp 1x, img/content/Cabinets/6-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/6-mobile@1x.webp 1x, img/content/Cabinets/6-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/6-desktop@1x.jpg 1x, img/content/Cabinets/6-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/6-tablet@1x.jpg 1x, img/content/Cabinets/6-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/6-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/6-mobile@2x.jpg 2x" alt="Витринный шкаф с тонированным стеклом.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">17800&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 8900&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
+
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/7-desktop@1x.webp 1x, img/content/Cabinets/7-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/7-tablet@1x.webp 1x, img/content/Cabinets/7-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/7-mobile@1x.webp 1x, img/content/Cabinets/7-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/7-desktop@1x.jpg 1x, img/content/Cabinets/7-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/7-tablet@1x.jpg 1x, img/content/Cabinets/7-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/7-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/7-mobile@2x.jpg 2x" alt="Витринный шкаф с тонированным стеклом.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">19800&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 9900&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
+
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/8-desktop@1x.webp 1x, img/content/Cabinets/8-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/8-tablet@1x.webp 1x, img/content/Cabinets/8-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/8-mobile@1x.webp 1x, img/content/Cabinets/8-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/8-desktop@1x.jpg 1x, img/content/Cabinets/8-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/8-tablet@1x.jpg 1x, img/content/Cabinets/8-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/8-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/7-mobile@2x.jpg 2x" alt="Белый современный шкаф без ручек.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">44000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 22000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
+
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/9-desktop@1x.webp 1x, img/content/Cabinets/9-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/9-tablet@1x.webp 1x, img/content/Cabinets/9-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/9-mobile@1x.webp 1x, img/content/Cabinets/9-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/9-desktop@1x.jpg 1x, img/content/Cabinets/9-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/9-tablet@1x.jpg 1x, img/content/Cabinets/9-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/9-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/9-mobile@2x.jpg 2x"
+                      alt="Шкаф-купе. Сочетание бежевого цвета с черным металлическим профилем.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">36000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 18000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
+
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/10-desktop@1x.webp 1x, img/content/Cabinets/10-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/10-tablet@1x.webp 1x, img/content/Cabinets/10-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/10-mobile@1x.webp 1x, img/content/Cabinets/10-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/10-desktop@1x.jpg 1x, img/content/Cabinets/10-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/10-tablet@1x.jpg 1x, img/content/Cabinets/10-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/10-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/10-mobile@2x.jpg 2x"
+                      alt="Белый распашной шкаф в скандинавском стиле.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">24000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 12000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
+
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/11-desktop@1x.webp 1x, img/content/Cabinets/11-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/11-tablet@1x.webp 1x, img/content/Cabinets/11-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Cabinets/11-mobile@1x.webp 1x, img/content/Cabinets/11-mobile@2x.webp 2x">
+                    <source media="(min-width: 1900px)"
+                      srcset="img/content/Cabinets/11-desktop@1x.jpg 1x, img/content/Cabinets/11-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Cabinets/11-tablet@1x.jpg 1x, img/content/Cabinets/11-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Cabinets/11-mobile@1x.jpg"
+                      srcset="img/content/Cabinets/11-mobile@2x.jpg 2x"
+                      alt="Шкаф-купе в сочетании двух древесных цветов с черным профилем.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">24000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 12000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
             </div>
-
-          <div class="swiper-slide">
-
-            <picture>
-              <source type="image/webp" media="(min-width: 1900px)"
-                srcset="img/content/Cabinets/9-desktop@1x.webp 1x, img/content/Cabinets/9-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 340px)"
-                srcset="img/content/Cabinets/9-tablet@1x.webp 1x, img/content/Cabinets/9-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/content/Cabinets/9-mobile@1x.webp 1x, img/content/Cabinets/9-mobile@2x.webp 2x">
-
-              <source media="(min-width: 1900px)"
-                srcset="img/content/Cabinets/9-desktop@1x.jpg 1x, img/content/Cabinets/9-desktop@2x.jpg 2x">
-              <source media="(min-width: 340px)"
-                srcset="img/content/Cabinets/9-tablet@1x.jpg 1x, img/content/Cabinets/9-tablet@2x.jpg 2x">
-              <img class="gallery__img" loading="lazy" src="img/content/Cabinets/9-mobile@1x.jpg"
-                srcset="img/content/Cabinets/9-mobile@2x.jpg 2x" alt="Шкаф 9">
-            </picture>
-
-            <div class="swiper-lazy-preloader"></div>
-          </div>
-        </div>
 
             <div class="swiper-pagination"></div>
 
@@ -712,85 +711,160 @@
           <h3 class="visually-hidden">Прихожие и комоды</h3>
           <div class="gallery__slider gallery__slider--hallways swiper">
             <div class="gallery__slider-wrapper swiper-wrapper">
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 735px)"
-                    srcset="img/content/Hallways/1-desktop@1x.webp 1x, img/content/Hallways/1-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Hallways/1-tablet@1x.webp 1x, img/content/Hallways/1-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Hallways/1-mobile@1x.webp 1x, img/content/Hallways/1-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 735px)"
-                    srcset="img/content/Hallways/1-desktop@1x.jpg 1x, img/content/Hallways/1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Hallways/1-tablet@1x.jpg 1x, img/content/Hallways/1-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Hallways/1-mobile@1x.jpg"
-                    srcset="img/content/Hallways/1-mobile@2x.jpg 2x" alt="Прихожая 1">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 735px)"
+                      srcset="img/content/Hallways/1-desktop@1x.webp 1x, img/content/Hallways/1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Hallways/1-tablet@1x.webp 1x, img/content/Hallways/1-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Hallways/1-mobile@1x.webp 1x, img/content/Hallways/1-mobile@2x.webp 2x">
+                    <source media="(min-width: 735px)"
+                      srcset="img/content/Hallways/1-desktop@1x.jpg 1x, img/content/Hallways/1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Hallways/1-tablet@1x.jpg 1x, img/content/Hallways/1-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Hallways/1-mobile@1x.jpg"
+                      srcset="img/content/Hallways/1-mobile@2x.jpg 2x" alt="Прихожая с корретной стяжкой.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">24000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 12000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 735px)"
-                    srcset="img/content/Hallways/2-desktop@1x.webp 1x, img/content/Hallways/2-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Hallways/2-tablet@1x.webp 1x, img/content/Hallways/2-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Hallways/2-mobile@1x.webp 1x, img/content/Hallways/2-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 735px)"
-                    srcset="img/content/Hallways/2-desktop@1x.jpg 1x, img/content/Hallways/2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Hallways/2-tablet@1x.jpg 1x, img/content/Hallways/2-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Hallways/2-mobile@1x.jpg"
-                    srcset="img/content/Hallways/2-mobile@2x.jpg 2x" alt="Прихожая 2">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 735px)"
+                      srcset="img/content/Hallways/2-desktop@1x.webp 1x, img/content/Hallways/2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Hallways/2-tablet@1x.webp 1x, img/content/Hallways/2-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Hallways/2-mobile@1x.webp 1x, img/content/Hallways/2-mobile@2x.webp 2x">
+                    <source media="(min-width: 735px)"
+                      srcset="img/content/Hallways/2-desktop@1x.jpg 1x, img/content/Hallways/2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Hallways/2-tablet@1x.jpg 1x, img/content/Hallways/2-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Hallways/2-mobile@1x.jpg"
+                      srcset="img/content/Hallways/2-mobile@2x.jpg 2x"
+                      alt="Современная прихожая с открытой нишей для обуви.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">17400&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 8700&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 735px)"
-                    srcset="img/content/Dressers/1-desktop@1x.webp 1x, img/content/Dressers/1-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Dressers/1-tablet@1x.webp 1x, img/content/Dressers/1-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Dressers/1-mobile@1x.webp 1x, img/content/Dressers/1-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 735px)"
-                    srcset="img/content/Dressers/1-desktop@1x.jpg 1x, img/content/Dressers/1-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Dressers/1-tablet@1x.jpg 1x, img/content/Dressers/1-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Dressers/1-mobile@1x.jpg"
-                    srcset="img/content/Dressers/1-mobile@2x.jpg 2x" alt="Комод 1">
-                </picture>
-
-                <div class="swiper-lazy-preloader"></div>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 735px)"
+                      srcset="img/content/Dressers/1-desktop@1x.webp 1x, img/content/Dressers/1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Dressers/1-tablet@1x.webp 1x, img/content/Dressers/1-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Dressers/1-mobile@1x.webp 1x, img/content/Dressers/1-mobile@2x.webp 2x">
+                    <source media="(min-width: 735px)"
+                      srcset="img/content/Dressers/1-desktop@1x.jpg 1x, img/content/Dressers/1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Dressers/1-tablet@1x.jpg 1x, img/content/Dressers/1-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Dressers/1-mobile@1x.jpg"
+                      srcset="img/content/Dressers/1-mobile@2x.jpg 2x"
+                      alt="Белый комод с фасадами из МДФ с фрезеровкой.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">11200&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 5600&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
-              <div class="swiper-slide">
 
-                <picture>
-                  <source type="image/webp" media="(min-width: 735px)"
-                    srcset="img/content/Dressers/2-desktop@1x.webp 1x, img/content/Dressers/2-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 340px)"
-                    srcset="img/content/Dressers/2-tablet@1x.webp 1x, img/content/Dressers/2-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/content/Dressers/2-mobile@1x.webp 1x, img/content/Dressers/2-mobile@2x.webp 2x">
+              <div class="swiper-slide gallery__slide">
 
-                  <source media="(min-width: 735px)"
-                    srcset="img/content/Dressers/2-desktop@1x.jpg 1x, img/content/Dressers/2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 340px)"
-                    srcset="img/content/Dressers/2-tablet@1x.jpg 1x, img/content/Dressers/2-tablet@2x.jpg 2x">
-                  <img class="gallery__img" loading="lazy" src="img/content/Dressers/2-mobile@1x.jpg"
-                    srcset="img/content/Dressers/2-mobile@2x.jpg 2x" alt="Комод 2">
-                </picture>
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 735px)"
+                      srcset="img/content/Dressers/2-desktop@1x.webp 1x, img/content/Dressers/2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Dressers/2-tablet@1x.webp 1x, img/content/Dressers/2-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Dressers/2-mobile@1x.webp 1x, img/content/Dressers/2-mobile@2x.webp 2x">
+                    <source media="(min-width: 735px)"
+                      srcset="img/content/Dressers/2-desktop@1x.jpg 1x, img/content/Dressers/2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Dressers/2-tablet@1x.jpg 1x, img/content/Dressers/2-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Dressers/2-mobile@1x.jpg"
+                      srcset="img/content/Dressers/2-mobile@2x.jpg 2x"
+                      alt="Современая тумба. Сочетание дерева с черным матовым цветом.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">13400&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 6700&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
 
-                <div class="swiper-lazy-preloader"></div>
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 735px)"
+                      srcset="img/content/Dressers/3-desktop@1x.webp 1x, img/content/Dressers/3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Dressers/3-tablet@1x.webp 1x, img/content/Dressers/3-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Dressers/3-mobile@1x.webp 1x, img/content/Dressers/3-mobile@2x.webp 2x">
+                    <source media="(min-width: 735px)"
+                      srcset="img/content/Dressers/3-desktop@1x.jpg 1x, img/content/Dressers/3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Dressers/3-tablet@1x.jpg 1x, img/content/Dressers/3-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Dressers/3-mobile@1x.jpg"
+                      srcset="img/content/Dressers/3-mobile@2x.jpg 2x"
+                      alt="Белый комод в скандинавском стиле с хромированными ручками.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">14000&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 7000&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
+              </div>
+
+              <div class="swiper-slide gallery__slide">
+
+                <div class="gallery__img-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 735px)"
+                      srcset="img/content/Dressers/4-desktop@1x.webp 1x, img/content/Dressers/4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 340px)"
+                      srcset="img/content/Dressers/4-tablet@1x.webp 1x, img/content/Dressers/4-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="img/content/Dressers/4-mobile@1x.webp 1x, img/content/Dressers/4-mobile@2x.webp 2x">
+                    <source media="(min-width: 735px)"
+                      srcset="img/content/Dressers/4-desktop@1x.jpg 1x, img/content/Dressers/4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 340px)"
+                      srcset="img/content/Dressers/4-tablet@1x.jpg 1x, img/content/Dressers/4-tablet@2x.jpg 2x">
+                    <img class="gallery__img" loading="lazy" src="img/content/Dressers/4-mobile@1x.jpg"
+                      srcset="img/content/Dressers/4-mobile@2x.jpg 2x"
+                      alt="Современный комод с профильной ручкой и доводчиками.">
+                  </picture>
+                  <div class="gallery__price-wrapper">
+                    <span class="gallery__price gallery__price--old">11200&nbsp;&#8381;</span>
+                    <span class="gallery__price">от 5600&nbsp;&#8381;</span>
+                  </div>
+                </div>
+                <div class="swiper-lazy-preloader gallery__preloader"></div>
               </div>
             </div>
 
@@ -805,7 +879,7 @@
 
     <section class="design" id="design">
       <div class="container design__wrapper">
-        <h2 class="design__title title">Новая кухня в одном клике</h2>
+        <h2 class="design__title title">Новая кухня уже сегодня</h2>
         <ol class="design__list">
           <li class="design__item">
             <p class="design__subtitle">Вызвать дизайнера</p>
@@ -813,11 +887,11 @@
           </li>
           <li class="design__item">
             <p class="design__subtitle">Согласовать проект</p>
-            <p class="design__text">дизайнер предложит оптимальную планировку</p>
+            <p class="design__text">дизайнер-замерщик предложит оптимальную планировку</p>
           </li>
           <li class="design__item">
             <p class="design__subtitle">Внести предоплату</p>
-            <p class="design__text">картой или наличными</p>
+            <p class="design__text">наличными или картой</p>
           </li>
           <li class="design__item">
             <p class="design__subtitle">Получить кухню</p>
@@ -961,7 +1035,7 @@
               </svg>
               <span>richard_mebel@mail.ru</span>
             </a>
-            <p class="page-footer__address">Москва и Московская область</p>
+            <p class="page-footer__address">Москва и&nbsp;Московская область</p>
           </div>
           <div class="page-footer__social social">
             <span class="visually-hidden">Мы в соцсетях:</span>
@@ -994,23 +1068,31 @@
     <button class="btn modal__btn-close" type="button" title="Закрыть"></button>
     <form class="feedback__form form" method="post" action="send.php" target="_self">
       <label class="visually-hidden" for="name">Ваше имя:</label>
-      <input class="form__input" id="name" type="text" name="name" placeholder="Ваше имя *" required>
-      <!-- <input class="form__input" id="name" type="text" name="name" placeholder="Ваше имя *" aria-required="true"> -->
+      <!-- <input class="form__input" id="name" type="text" name="name" placeholder="Ваше имя *"> -->
+      <input class="form__input" id="name" type="text" name="name" pattern="[a-zA-Zа-яА-ЯёЁ\s'-()]{2,60}"
+        placeholder="Ваше имя *" required
+        title="Допускаются символы латиницы и кириллицы, пробел, дефис, апостроф и круглые скобки">
       <label class="visually-hidden" for="phone">Ваш телефон:</label>
-      <input class="form__input" id="phone" type="tel" name="phone" maxlength="17" placeholder="Ваш телефон *" required>
-      <!-- <input class="form__input" id="phone" type="tel" name="phone" maxlength="17" placeholder="Ваш телефон *" aria-required="true"> -->
-      <!-- <input class="form__input" id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" maxlength="12" placeholder="Ваш телефон *" required> -->
+      <!-- <input class="form__input" id="phone" type="tel" name="phone" placeholder="Ваш телефон *"> -->
+      <input class="form__input" id="phone" type="tel" pattern="(\+7|8) \d{3} \d{3}-\d{2}-\d{2}|(\+7|7|8)\d{10}"
+        name="phone" minlength="11" maxlength="16" placeholder="Ваш телефон *" required
+        title="Номер телефона должен содержать 11 цифр">
       <label class="visually-hidden" for="email">Ваша почта:</label>
       <input class="form__input" id="email" type="email" name="email" placeholder="Ваша почта">
+      <!-- Скрытое поле Honeypot Captcha -->
+      <label for="email_address" style="display: none;">Дополнительная почта:</label>
+      <input type="email" id="email_address" name="email_address" placeholder="Ваша дополнительная почта *"
+        style="display: none;">
+
       <label class="visually-hidden" for="text">Дополнительная информация:</label>
       <textarea class="form__input form__input--text" name="text" id="text" cols="30" rows="8"
         placeholder="Дополнительная информация" maxlength="300"></textarea>
-      <input type="hidden" name="act" value="order">
       <button class="btn btn--submit" type="submit">Отправить</button>
+      <p class="feedback__legend">* &mdash; обязательные поля.</p>
       <p class="feedback__policy-desc">
         Нажимая на&nbsp;кнопку &laquo;Отправить&raquo;, Вы&nbsp;даёте согласие на&nbsp;обработку персональных данных и
         соглашаетесь с
-        <a class="feedback__policy-link" href="docs/policy.pdf" target="_blank">политикой конфиденциальности.</a>
+        <a class="feedback__policy-link" href="docs/policy.pdf" target="_blank">политикой&nbsp;конфиденциальности.</a>
       </p>
     </form>
   </section>
@@ -1018,8 +1100,8 @@
   <section class="modal modal--success" role="dialog" aria-modal="true" aria-labelledby="dialogTitle2">
     <div class="modal__wrapper">
       <h2 class="modal__title" id="dialogTitle2">Ваша заявка отправлена</h2>
-      <p class="modal__desc">Спасибо за вашу заявку!</p>
-      <p class="modal__desc">В ближайшее время мы свяжемся с вами.</p>
+      <p class="modal__desc">Спасибо за&nbsp;вашу заявку!</p>
+      <p class="modal__desc">В&nbsp;ближайшее время мы&nbsp;свяжемся с&nbsp;вами.</p>
     </div>
     <div class="modal__btn-wrapper">
       <button class="modal__btn btn" type="button">Закрыть окно</button>
@@ -1028,14 +1110,15 @@
 
   <section class="modal modal--failure" role="dialog" aria-modal="true" aria-labelledby="dialogTitle3">
     <div class="modal__wrapper">
-      <h2 class="modal__title" id="dialogTitle3">Что-то пошло не так!</h2>
+      <h2 class="modal__title" id="dialogTitle3">Что-то пошло не&nbsp;так!</h2>
+      <p class="modal__error"></p>
       <p class="modal__desc">Давайте попробуем еще раз.</p>
     </div>
     <div class="modal__btn-wrapper">
       <button class="modal__btn btn" type="button">OK</button>
     </div>
   </section>
-
+  <script src="libs/modernizr-custom.js"></script>
   <script src="libs/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

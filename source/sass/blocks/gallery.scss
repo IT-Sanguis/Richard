@@ -13,6 +13,8 @@
 
 
 .gallery__title {
+  margin: 0 auto;
+  // margin-bottom: 1.5vh;
   margin-bottom: 50px;
 }
 
@@ -43,30 +45,121 @@
 .gallery__img {
   width: 100%;
   height: 400px;
+
   object-fit: cover;
   // object-position: right bottom;
+
+  background-color: #dddddd;
 
   border-radius: 15px;
 }
 
-.gallery__slider--kitchen .gallery__img {
-  // object-position: center center;
-  // object-position: 50% 50%;
-  // object-position: 10% 30%;
+.gallery__img-wrapper {
+  position: relative;
+  display: inline-block;
+
+  margin: 0 auto;
 }
 
-.gallery__slider--cabinets .gallery__img {
-  // width: 300px;
-  height: 500px;
-  // object-position: right bottom;
-  // object-position: 50% 50%;
-  // object-position: 10% 30%;
+.gallery__slider--kitchen {
+  .gallery__img {
+    // object-position: center center;
+    // object-position: 50% 50%;
+    // object-position: 10% 70%;
+    object-fit: contain;
+
+    width: auto;
+    margin: 0 auto;
+    // border-radius: 1000px;
+  }
 }
 
-.gallery__slider--hallways .gallery__img {
-  object-position: center 80%;
-  // object-position: 50% 50%;
-  // object-position: 10% 30%;
+
+.gallery__slider--cabinets {
+  .gallery__img {
+    // width: 300px;
+    object-fit: contain;
+
+    width: auto;
+    height: 500px;
+    margin: 0 auto;
+    // object-position: right bottom;
+    // object-position: 50% 50%;
+    // object-position: 10% 30%;
+  }
+}
+
+.gallery__slider--hallways {
+  .gallery__img {
+    object-fit: contain;
+
+    width: auto;
+    height: 500px;
+    margin: 0 auto;
+
+    // object-position: center 80%;
+    // object-position: 50% 50%;
+    // object-position: 10% 30%;
+  }
+}
+
+.gallery__price-wrapper {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  // left: 50%;
+
+  padding: 2% 3%;
+
+  background-color: $color--dark;
+
+  border-radius: 10px;
+
+  // transform: translateX(-50%);
+}
+
+
+.gallery__slide {
+  text-align: center;
+  // width: auto;
+}
+
+.gallery__price {
+  @include reset;
+
+  display: block;
+
+  font-family: $font-family--title;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  line-height: 1;
+
+  color: $color--accent;
+
+  &--old {
+    position: relative;
+    // text-decoration: line-through;
+    font-size: var(--font-size-md);
+
+    text-align: center;
+    font-weight: 700;
+
+    color: rgba($color--light, 0.8);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+
+      width: 100%;
+      height: 2px;
+
+      background-color: $color-bg--accent;
+
+      transform: translateY(-50%) rotate(-10deg);
+    }
+  }
 }
 
 
@@ -80,14 +173,14 @@
 
 @media (max-width: $mobile-width--max) {
   .gallery__slider--kitchen .gallery__img {
-    height: 50vh;
+    height: 40vh;
     // object-position: center center;
     // object-position: 50% 50%;
     // object-position: 10% 30%;
   }
 
   .gallery__slider--cabinets .gallery__img {
-    height: 65vh;
+    height: 43vh;
     // width: 300px;
     // height: 500px;
     // object-position: right bottom;
@@ -96,10 +189,14 @@
   }
 
   .gallery__slider--hallways .gallery__img {
-    height: 50vh;
+    height: 38vh;
     // object-position: center 80%;
     // object-position: 50% 50%;
     // object-position: 10% 30%;
   }
+}
 
+
+.no-js .gallery__preloader {
+  display: none;
 }

@@ -3,8 +3,6 @@
 
 .title {
   @include reset;
-  margin: 0 auto;
-  margin-bottom: 1.5vh;
 
   font-family: $font-family--title;
   font-size: 3.56rem;

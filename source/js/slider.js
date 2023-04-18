@@ -91,7 +91,7 @@ const swiperCabinets = new Swiper(".gallery__slider--cabinets", {
     },
     959: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 52,
     },
   },
 
@@ -126,9 +126,13 @@ const swiperHallways = new Swiper(".gallery__slider--hallways", {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    960: {
+    700: {
       slidesPerView: 2,
-      spaceBetween: 50,
+      spaceBetween: 20,
+    },
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 52,
     }
   },
 });

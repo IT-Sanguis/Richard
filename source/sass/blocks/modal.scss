@@ -2,7 +2,7 @@
   position: fixed;
   top: 50vh;
   left: 50vw;
-  z-index: 1;
+  z-index: 999;
 
   display: none;
 
@@ -17,7 +17,7 @@
 
   &--success {
     top: 50vh;
-    z-index: 2;
+    z-index: 9999;
     // display: block;
 
     background-color: $color-bg--primary;
@@ -27,7 +27,7 @@
 
   &--failure {
     top: 50vh;
-    z-index: 2;
+    z-index: 9999;
     // display: block;
 
     background-color: $color-bg--primary;
@@ -68,9 +68,14 @@
   color: $color--dark;
 }
 
+.modal__error {
+  @include reset;
+  margin-bottom: 10px;
+}
 
 .modal__desc {
   @include reset;
+  margin-bottom: 10px;
 }
 
 
@@ -87,6 +92,15 @@
 
 .modal__btn {
   padding: 20px;
+
+  &:hover {
+    background-color: #b8b8b8;
+  }
+
+  &:active {
+    // background-color: #edd9ce;
+    opacity: 0.8;
+  }
 }
 
 
@@ -158,6 +172,9 @@
   }
 }
 
+.no-js .modal__btn-close {
+  display: none;
+}
 
 @keyframes fadein {
   0% {

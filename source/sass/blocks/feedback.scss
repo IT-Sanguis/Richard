@@ -14,9 +14,18 @@
   flex-direction: column;
 }
 
+.feedback__legend {
+  @include reset;
+  margin-top: 20px;
+
+  font-size: 0.7rem;
+  font-size: var(--font-size-xs);
+}
+
 .feedback__policy-desc {
   @include reset;
   margin-top: 20px;
+
   font-size: 0.7rem;
   font-size: var(--font-size-xs);
 }
@@ -60,4 +69,12 @@
   .feedback__policy-desc {
     margin-top: 15px;
   }
+}
+
+.no-js .feedback {
+  position: static;
+
+  display: block;
+
+  transform: translate(0);
 }
