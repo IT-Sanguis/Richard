@@ -19,15 +19,49 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicons/favicon.ico">
   <meta name="theme-color" content="#fafafa">
 
-  <!--
-    Yandex
--->
+  <link rel="canonical" href="https://richard-mebel.ru/">
+
+  <meta name="yandex-verification" content="33ddaac265ae015f" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1GBSJPZQQ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1GBSJPZQQ3');
+  </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(93306495, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/93306495" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 
   <!--
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 -->
+
+  <script src="libs/modernizr-custom.js"></script>
 
   <link rel="stylesheet" type="text/css" href="libs/swiper-bundle.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
@@ -1048,13 +1082,13 @@
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
+              <!-- <li class="social__item">
                 <a class="social__link social__link--vk" href="https://www.vk.com/" title="VK">
                   <svg role="img" width="25" height="25">
                     <use xlink:href="#icon-vk"></use>
                   </svg>
                 </a>
-              </li>
+              </li> -->
             </ul>
           </div>
           <a class="page-footer__policy" href="docs/policy.pdf" target="_blank">Политика конфиденциальности</a>
@@ -1118,7 +1152,7 @@
       <button class="modal__btn btn" type="button">OK</button>
     </div>
   </section>
-  <script src="libs/modernizr-custom.js"></script>
+
   <script src="libs/swiper-bundle.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

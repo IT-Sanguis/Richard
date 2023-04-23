@@ -158,7 +158,7 @@ const submitForm = (evt) => {
 
     })
     .catch(error => {
-      console.error(error);
+      // console.error(error);
       modalFailure.classList.remove("modal--show");
       modalSuccess.offsetWidth = modalSuccess.offsetWidth;
       modalFailure.classList.add("modal--show");
