@@ -1,9 +1,9 @@
 .page-header {
-  position: absolute;
+  // position: absolute;
   // position: fixed;
 
-  top: 0;
-  left: 0;
+  // top: 0;
+  // left: 0;
   // z-index: 999;
   // right: 0;
   width: 100%;
@@ -21,7 +21,9 @@
   justify-content: space-between;
   align-items: center;
 
-  min-height: 90px;
+  min-height: $min-header-height;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
@@ -31,6 +33,7 @@
 
 .page-header__burger {
   display: none;
+  flex-shrink: 0;
 }
 
 
@@ -55,6 +58,10 @@
 
   &:hover {
     color: $color-btn--accent-80;
+  }
+
+  svg {
+    flex-shrink: 0;
   }
 }
 

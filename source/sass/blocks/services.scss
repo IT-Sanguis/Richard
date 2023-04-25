@@ -35,19 +35,25 @@
 .services__subtitle {
   @include reset;
 
+  max-width: 100%;
+  // max-width: 75ch;
   margin-bottom: 5px;
-  // width: 60vw;
   font-size: 1.5rem;
   font-size: var(--font-size-md);
   line-height: 1.4;
+  font-weight: 700;
   // text-align: center;
+  overflow-wrap: break-word;
 }
 
 
 .services__list {
   @include reset-list;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(235px, 1fr));
+  // grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
   gap: 15px;
 
   text-align: center;
@@ -129,7 +135,8 @@
 
 @media (max-width: $desktop-width--min) {
   .services__list {
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 15px;
 
     text-align: center;
@@ -144,7 +151,8 @@
   }
 
   .services__list {
-    grid-template-columns: repeat(1, 1fr);
+    // grid-template-columns: repeat(1, 1fr);
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
 
     text-align: center;

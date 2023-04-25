@@ -35,6 +35,10 @@
   }
 }
 
+.intro__wrapper {
+  transform: translateY(- $min-header-height);
+}
+
 
 .intro__quote {
   max-width: 90vw;
@@ -60,11 +64,14 @@
   @include reset;
   display: block;
   padding-right: 5vw;
+  // max-width: 100%;
+  max-width: 75ch;
 
   font-size: 2rem;
   font-size: var(--font-size-lg);
   text-align: right;
   color: $color--light;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: $desktop-width--min) {
@@ -90,6 +97,10 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-intro-desktop@1x.jpg");
     }
+  }
+
+  .intro__wrapper {
+    transform: translateY(0);
   }
 }
 

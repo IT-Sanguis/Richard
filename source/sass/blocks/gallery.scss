@@ -109,7 +109,10 @@
   left: 2%;
   // left: 50%;
 
+  max-width: 85%;
   padding: 2% 3%;
+
+  overflow-wrap: break-word;
 
   background-color: $color--dark;
 

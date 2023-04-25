@@ -1,10 +1,12 @@
 .btn {
   @include reset;
   display: inline-block;
+  max-width: 100%;
 
   vertical-align: middle;
   text-align: center;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 
   border: none;
 
@@ -72,7 +74,6 @@
     }
 
     &:active {
-      // background-color: #edd9ce;
       opacity: 0.8;
     }
   }

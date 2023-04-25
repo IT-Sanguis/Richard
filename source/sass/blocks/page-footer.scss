@@ -52,6 +52,10 @@
 
   font-size: 0.8rem;
   font-size: var(--font-size-sm);
+
+  svg {
+    flex-shrink: 0;
+  }
 }
 
 .page-footer__mail,

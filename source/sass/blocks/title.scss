@@ -3,6 +3,9 @@
 
 .title {
   @include reset;
+  // max-width: 100%;
+  max-width: 75ch;
+  overflow-wrap: break-word;
 
   font-family: $font-family--title;
   font-size: 3.56rem;
